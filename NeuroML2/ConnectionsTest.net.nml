@@ -13,7 +13,7 @@
     <alphaCondSynapse id="syn__FixedProbabilityConnector" tau_syn="2." e_rev="0."/>
     <alphaCondSynapse id="syn__AllToAllConnectorProjSelection" tau_syn="2." e_rev="0."/>
     <network id="ConnectionsTest">
-        <population id="pop_pre" component="IF_cond_alpha_pop_pre" size="5" type="populationList">
+        <population id="pop_pre" component="IF_cond_alpha_pop_pre" size="2" type="populationList">
             <property tag="radius" value="2"/>
             <property tag="color" value="0 0.6 0"/>
             <instance id="0">
@@ -23,7 +23,7 @@
                 <location x="11.472072119577724" y="80.699171170032287" z="-53.203572022937038"/>
             </instance>
         </population>
-        <population id="pop_post" component="IF_cond_alpha_pop_post" size="5" type="populationList">
+        <population id="pop_post" component="IF_cond_alpha_pop_post" size="2" type="populationList">
             <property tag="radius" value="2"/>
             <property tag="color" value="0 0.2 0.6"/>
             <instance id="0">
