@@ -11,7 +11,7 @@
     <alphaCondSynapse id="syn__OneToOneConnector" tau_syn="2." e_rev="0."/>
 
     <network id="ConnectionsTest">
-        <population id="pop_pre" component="IF_cond_alpha_pop_pre" size="5" type="populationList">
+        <population id="pop_pre" component="IF_cond_alpha_pop_pre" size="4" type="populationList">
             <property tag="radius" value="5"/>
             <property tag="color" value="0 0.6 0"/>
             <instance id="0">
@@ -26,11 +26,8 @@
             <instance id="3">
                 <location x="-6.314426474356272" y="76.918361733816184" z="59.130891123914743"/>
             </instance>
-            <instance id="4">
-                <location x="-75.833881837800888" y="-54.867760687028344" z="-14.620447892697186"/>
-            </instance>
         </population>
-        <population id="pop_post" component="IF_cond_alpha_pop_post" size="5" type="populationList">
+        <population id="pop_post" component="IF_cond_alpha_pop_post" size="4" type="populationList">
             <property tag="radius" value="5"/>
             <property tag="color" value="0 0.2 0.6"/>
             <instance id="0">
@@ -44,9 +41,6 @@
             </instance>
             <instance id="3">
                 <location x="76.544357192759776" y="227.652930637147989" z="-43.08749329098012"/>
-            </instance>
-            <instance id="4">
-                <location x="15.929587393822398" y="114.712824614582672" z="48.682739961940946"/>
             </instance>
         </population>
         <projection id="OneToOneConnector" presynapticPopulation="pop_pre" postsynapticPopulation="pop_post" synapse="syn__OneToOneConnector">
