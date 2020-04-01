@@ -120,13 +120,6 @@
             <connectionWD id="4" preCellId="../pop_pre/2/IF_cond_alpha_pop_pre" postCellId="../pop_post/4/IF_cond_alpha_pop_post" weight="0.1" delay="1.0ms"/>
             <connectionWD id="5" preCellId="../pop_pre/3/IF_cond_alpha_pop_pre" postCellId="../pop_post/4/IF_cond_alpha_pop_post" weight="0.1" delay="1.0ms"/>
         </projection>
-        <projection id="AllToAllConnectorProjSelection" presynapticPopulation="pop_pre" postsynapticPopulation="pop_post" synapse="syn__AllToAllConnectorProjSelection">
-            <connectionWD id="0" preCellId="../pop_pre/1/IF_cond_alpha_pop_pre" postCellId="../pop_post/0/IF_cond_alpha_pop_post" weight="0.05" delay="5.0ms"/>
-            <connectionWD id="1" preCellId="../pop_pre/3/IF_cond_alpha_pop_pre" postCellId="../pop_post/0/IF_cond_alpha_pop_post" weight="0.05" delay="5.0ms"/>
-            <connectionWD id="2" preCellId="../pop_pre/1/IF_cond_alpha_pop_pre" postCellId="../pop_post/2/IF_cond_alpha_pop_post" weight="0.05" delay="5.0ms"/>
-            <connectionWD id="3" preCellId="../pop_pre/3/IF_cond_alpha_pop_pre" postCellId="../pop_post/2/IF_cond_alpha_pop_post" weight="0.05" delay="5.0ms"/>
-            <connectionWD id="4" preCellId="../pop_pre/1/IF_cond_alpha_pop_pre" postCellId="../pop_post/4/IF_cond_alpha_pop_post" weight="0.05" delay="5.0ms"/>
-            <connectionWD id="5" preCellId="../pop_pre/3/IF_cond_alpha_pop_pre" postCellId="../pop_post/4/IF_cond_alpha_pop_post" weight="0.05" delay="5.0ms"/>
-        </projection>
+
     </network>
 </neuroml>
