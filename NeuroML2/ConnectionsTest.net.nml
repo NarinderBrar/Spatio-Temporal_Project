@@ -5,6 +5,7 @@
         libNeuroML v0.2.50
         pyNeuroML v0.5.1
     </notes>
+
     <IF_cond_alpha id="IF_cond_alpha_pop_pre" cm="1." i_offset="0.9" tau_syn_E="2." tau_syn_I="5." v_init="-65." tau_m="20." tau_refrac="5." v_reset="-65." v_rest="-65." v_thresh="-50." e_rev_E="0." e_rev_I="-70."/>
     <IF_cond_alpha id="IF_cond_alpha_pop_post" cm="1." i_offset="0.9" tau_syn_E="2." tau_syn_I="5." v_init="-65." tau_m="20." tau_refrac="5." v_reset="-65." v_rest="-65." v_thresh="-50." e_rev_E="0." e_rev_I="-70."/>
 
@@ -31,6 +32,7 @@
                 <location x="8.464979510537173" y="234.273285648400588" z="91.273891500697161"/>
             </instance>
         </population>
+
         <projection id="OneToOneConnector" presynapticPopulation="pop_pre" postsynapticPopulation="pop_post" synapse="syn__OneToOneConnector">
             <connectionWD id="0" preCellId="../pop_pre/0/IF_cond_alpha_pop_pre" postCellId="../pop_post/0/IF_cond_alpha_pop_post" weight="0.02" delay="4.0ms"/>
             <connectionWD id="1" preCellId="../pop_pre/1/IF_cond_alpha_pop_pre" postCellId="../pop_post/1/IF_cond_alpha_pop_post" weight="0.02" delay="4.0ms"/>
