@@ -7,11 +7,9 @@
     </notes>
     <IF_cond_alpha id="IF_cond_alpha_pop_pre" cm="1." i_offset="0.9" tau_syn_E="2." tau_syn_I="5." v_init="-65." tau_m="20." tau_refrac="5." v_reset="-65." v_rest="-65." v_thresh="-50." e_rev_E="0." e_rev_I="-70."/>
     <IF_cond_alpha id="IF_cond_alpha_pop_post" cm="1." i_offset="0.9" tau_syn_E="2." tau_syn_I="5." v_init="-65." tau_m="20." tau_refrac="5." v_reset="-65." v_rest="-65." v_thresh="-50." e_rev_E="0." e_rev_I="-70."/>
-    <alphaCondSynapse id="syn__pop_pre__TO__pop_post" tau_syn="2." e_rev="0."/>
-    <alphaCondSynapse id="syn__AllToAllConnectorProj" tau_syn="2." e_rev="0."/>
+
     <alphaCondSynapse id="syn__OneToOneConnector" tau_syn="2." e_rev="0."/>
-    <alphaCondSynapse id="syn__FixedProbabilityConnector" tau_syn="2." e_rev="0."/>
-    <alphaCondSynapse id="syn__AllToAllConnectorProjSelection" tau_syn="2." e_rev="0."/>
+
     <network id="ConnectionsTest">
         <population id="pop_pre" component="IF_cond_alpha_pop_pre" size="5" type="populationList">
             <property tag="radius" value="5"/>
