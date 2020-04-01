@@ -22,6 +22,15 @@
             <instance id="1">
                 <location x="11.472072119577724" y="80.699171170032287" z="-53.203572022937038"/>
             </instance>
+            <instance id="2">
+                <location x="37.322224293254976" y="36.213527652667565" z="75.559697828453508"/>
+            </instance>
+            <instance id="3">
+                <location x="-6.314426474356272" y="76.918361733816184" z="59.130891123914743"/>
+            </instance>
+            <instance id="4">
+                <location x="-75.833881837800888" y="-54.867760687028344" z="-14.620447892697186"/>
+            </instance>
         </population>
         <population id="pop_post" component="IF_cond_alpha_pop_post" size="5" type="populationList">
             <property tag="radius" value="5"/>
@@ -31,6 +40,15 @@
             </instance>
             <instance id="1">
                 <location x="8.464979510537173" y="234.273285648400588" z="91.273891500697161"/>
+            </instance>
+            <instance id="2">
+                <location x="-16.727033144122473" y="140.380211192486684" z="11.316490753713438"/>
+            </instance>
+            <instance id="3">
+                <location x="76.544357192759776" y="227.652930637147989" z="-43.08749329098012"/>
+            </instance>
+            <instance id="4">
+                <location x="15.929587393822398" y="114.712824614582672" z="48.682739961940946"/>
             </instance>
         </population>
         <projection id="OneToOneConnector" presynapticPopulation="pop_pre" postsynapticPopulation="pop_post" synapse="syn__OneToOneConnector">
