@@ -7,40 +7,30 @@
     id="SimpleCell">
 
     <cell id="SimpleCell">
-
         <morphology id="SimpleCell_Morphology">
-
-            <!-- Note: no <segments> -->
-
-            <segment id ="0" name="Soma">    <!-- name is optional-->
-                <!-- no parent => root segment -->
+            <segment id ="0" name="Soma">
                 <proximal x="0" y="0" z="0" diameter="10"/>
                 <distal x="10" y="0" z="0" diameter="10"/>
             </segment>
 
             <segment id ="1" name="MainDendrite1" >
                 <parent segment="0"/>
-                <!-- Same proximal 3D point as parent but different diameter -->
                 <proximal x="10" y="0" z="0" diameter="3"/>
                 <distal x="20" y="0" z="0" diameter="3"/>
             </segment>
 
             <segment id ="2" name="MainDendrite2">
                 <parent segment="1"/>
-                <!-- no proximal => use distal (including diameter) of parent -->
                 <distal x="30" y="0" z="0" diameter="1"/>
             </segment>
 
             <segment id ="3" name="Spine" >
-                <!-- Electrically connected to point 0.5 along parent -->
                 <parent segment="2" fractionAlong="0.5"/>
                 <proximal x="25" y="0" z="0" diameter="0.2"/>
                 <distal x="25" y="1" z="0" diameter="0.2"/>
             </segment>
 
-            <!-- segmentGroups follow -->
-
-            <segmentGroup id="soma_group" neuroLexId="sao1044911821">    <!-- Reserved/special name of a group -->
+            <segmentGroup id="soma_group" neuroLexId="sao1044911821">
                 <member segment="0"/>
             </segmentGroup>
 
@@ -50,36 +40,29 @@
             </segmentGroup>
 
 
-            <!-- The NeuroLex reference points to the concept of a spine -->
             <segmentGroup id="spines" neuroLexId="sao1145756102">
                 <member segment="3"/>
             </segmentGroup>
 
 
-            <segmentGroup id="dendrite_group" neuroLexId="sao1211023249">     <!-- Reserved/special name of a group -->
+            <segmentGroup id="dendrite_group" neuroLexId="sao1211023249">
                 <include segmentGroup="thick_dendrites"/>
                 <include segmentGroup="spines"/>
-                <!-- <exclude ...> could be present here -->
             </segmentGroup>
 
 
-            <segmentGroup id="middle">            <!-- group defined between 2 segs -->
+            <segmentGroup id="middle">
                 <path>
                     <from segment="1"/>
                     <to segment="2"/>
                 </path>
             </segmentGroup>
 
-            <segmentGroup id="tip">              <!-- group defined between 2 segs -->
+            <segmentGroup id="tip">
                 <subTree>
                     <from segment="1"/>
                 </subTree>
             </segmentGroup>
-
-            <!-- TODO: Allow wildcard on names?-->
-
         </morphology>
-
     </cell>
-
 </neuroml>
