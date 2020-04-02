@@ -6,7 +6,7 @@
   https://raw.githubusercontent.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd"
   id="CA1">
 
-    <!--include href="hd.channel.nml"/>
+    <include href="hd.channel.nml"/>
 
     <include href="hd__vhalflmin73.channel.nml"/>
 
@@ -22,7 +22,7 @@
 
     <include href="nax.channel.nml"/>
 
-    <include href="pas.channel.nml"/-->
+    <include href="pas.channel.nml"/>
 
     <cell id="CA1">
 
@@ -19479,7 +19479,7 @@
 
         </morphology>
 
-        <!--biophysicalProperties id="biophys">
+        <biophysicalProperties id="biophys">
 
             <membraneProperties>
 
@@ -19542,7 +19542,7 @@
 
             </intracellularProperties>
 
-        </biophysicalProperties-->
+        </biophysicalProperties>
 
     </cell>
 
