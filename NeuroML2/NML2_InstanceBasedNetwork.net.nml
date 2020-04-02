@@ -5,11 +5,13 @@
       xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 ../Schemas/NeuroML2/NeuroML_v2beta4.xsd"
     id="NML2_InstanceBasedNetwork">
 
+<!-- Example of a network specified as a set of location and connection instances in NeuroML 2 -->
+
     <expOneSynapse id="syn1" gbase="5nS" erev="0mV" tauDecay="3ms" />
     <expOneSynapse id="syn2" gbase="10nS" erev="0mV" tauDecay="2ms" />
 
     <baseCellMembPot id="iaf" leakReversal="-60mV" thresh="-55mV" reset="-62mV" C="1.0nF" leakConductance="0.05uS">
-      <morphology id="NeuroMorpho_iaf">
+      <morphology id="NeuroMorpho_PyrCell123">
       </morphology>
     </baseCellMembPot>
 
