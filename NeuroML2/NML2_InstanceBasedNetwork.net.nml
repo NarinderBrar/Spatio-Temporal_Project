@@ -10,10 +10,6 @@
 
     <baseCellMembPot id="iaf" leakReversal="-60mV" thresh="-55mV" reset="-62mV" C="1.0nF" leakConductance="0.05uS">
       <morphology id="NeuroMorpho_iaf">
-        <segment id ="0" name="Soma">
-            <proximal x="0" y="0" z="0" diameter="10"/>
-            <distal x="10" y="0" z="0" diameter="10"/>
-        </segment>
       </morphology>
     </baseCellMembPot>
 
