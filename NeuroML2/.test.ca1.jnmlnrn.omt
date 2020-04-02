@@ -1,0 +1,51 @@
+# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
+# Still in development, subject to change without notice!!
+
+target: LEMS_BigCA1.xml 
+engine: jNeuroML_NEURON
+mep: .test.ca1.mep
+experiments:
+  Seg0:
+    observables:
+      spike times:
+        file: 
+          path: CA1_CG_0.0.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+          threshold: -40
+        tolerance: 0.00254
+  Seg14:
+    observables:
+      spike times:
+        file: 
+          path: CA1_CG_0.14.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+          threshold: -40
+        tolerance: 0.00133
+  Seg2031:
+    observables:
+      spike times:
+        file: 
+          path: CA1_CG_0.2031.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+          threshold: -40
+        tolerance: 0.00319
+  Seg2056:
+    observables:
+      spike times:
+        file: 
+          path: CA1_CG_0.2056.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+          threshold: -40
+        tolerance: 0.000417
