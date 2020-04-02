@@ -83,6 +83,38 @@
 
         <biophysicalProperties id="biophys">
 
+            <membraneProperties>
+
+                <channelDensity condDensity="0.05 mS_per_cm2" id="hd_soma_group" ionChannel="hd__vhalflmin73" segmentGroup="soma_0" ion="hd" erev="-30.0 mV"/>
+
+                <channelDensity condDensity="30.0 mS_per_cm2" id="kap_soma_group" ionChannel="kap" segmentGroup="soma_0" ion="k" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="30.0 mS_per_cm2" id="kap_axon_group" ionChannel="kap" segmentGroup="dendrite_15" ion="k" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="10.0 mS_per_cm2" id="kdr_all" ionChannel="kdr" ion="k" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="0.0357143 mS_per_cm2" id="pas_all" ionChannel="pas" erev="-58.0 mV" ion="non_specific"/>
+
+
+
+                <!--kap with param: gmax = f(p) = (H(100 + ((-1) * p)) * 3.0E-7) * (1 + (p / 100)) on ParameterisedGroup: PathLengthOverDendrites on: dendrite_group with metric: Path Length from root (NO_TRANSLATION, NO_NORMALISATION), var: p-->
+
+                <channelDensityNonUniform id="kap_dendrite_group" ionChannel="kap" ion="k" erev="-90.0 mV">
+                    <variableParameter parameter="condDensity" segmentGroup="dendrite_group">
+                        <inhomogeneousValue inhomogeneousParameter="PathLengthOverDendrites" value="1.0E9 * (H(100 + ((-1) * p)) * 3.0E-7) * (1 + (p / 100))"/>    <!--Note: conversion factor (1.0E9 * ) included to convert to units: GENESIS SI Units-->
+
+                    </variableParameter>
+                </channelDensityNonUniform>
+
+
+                <spikeThresh value="0.0 mV"/>
+
+                <specificCapacitance value="1.0 uF_per_cm2"/>
+
+                <initMembPotential value="-65.0 mV"/>
+
+            </membraneProperties>
+
         </biophysicalProperties>
 
     </cell>
