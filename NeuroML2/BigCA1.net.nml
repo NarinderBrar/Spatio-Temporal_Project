@@ -9,8 +9,8 @@
     <notes>
     </notes>
 
-    <!--<include href="CA1.cell.nml"/>-->
-    <include href="SimpleCell.cell.nml"/>
+    <include href="CA1.cell.nml"/>
+    <!--<include href="SimpleCell.cell.nml"/>
 
     <!--<include href="hd.channel.nml"/>
     <include href="hd__vhalflmin73.channel.nml"/>
