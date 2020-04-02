@@ -6,7 +6,7 @@
   https://raw.githubusercontent.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd"
   id="CA1">
 
-    <include href="hd.channel.nml"/>
+    <!--include href="hd.channel.nml"/>
 
     <include href="hd__vhalflmin73.channel.nml"/>
 
@@ -22,7 +22,7 @@
 
     <include href="nax.channel.nml"/>
 
-    <include href="pas.channel.nml"/>
+    <include href="pas.channel.nml"/-->
 
     <cell id="CA1">
 
@@ -19479,9 +19479,7 @@
 
         </morphology>
 
-            <!--Adding the biophysical parameters-->
-
-        <biophysicalProperties id="biophys">
+        <!--biophysicalProperties id="biophys">
 
             <membraneProperties>
 
@@ -19500,45 +19498,33 @@
                 <channelDensity condDensity="0.0357143 mS_per_cm2" id="pas_all" ionChannel="pas" erev="-58.0 mV" ion="non_specific"/>
 
 
-                <!--hd with param: gmax = f(p) = 5.0E-10 * (1 + ((3 * p) / 100)) on ParameterisedGroup: PathLengthOverDendSubset_5 on: ModelViewParmSubset_5 with metric: Path Length from root (NO_TRANSLATION, NO_NORMALISATION), var: p-->
-
                 <channelDensityNonUniform id="hd_ModelViewParmSubset_5" ionChannel="hd" ion="hd" erev="-30.0 mV">
                     <variableParameter parameter="condDensity" segmentGroup="ModelViewParmSubset_5">
-                        <inhomogeneousValue inhomogeneousParameter="PathLengthOverDendSubset_5" value="1.0E9 * 5.0E-10 * (1 + ((3 * p) / 100))"/>    <!--Note: conversion factor (1.0E9 * ) included to convert to units: GENESIS SI Units-->
+                        <inhomogeneousValue inhomogeneousParameter="PathLengthOverDendSubset_5" value="1.0E9 * 5.0E-10 * (1 + ((3 * p) / 100))"/>
 
                     </variableParameter>
                 </channelDensityNonUniform>
-
-
-                <!--hdmin73 with param: gmax = f(p) = 5.0E-10 * (1 + ((3 * p) / 100)) on ParameterisedGroup: PathLengthOverDendSubset_7 on: ModelViewParmSubset_7 with metric: Path Length from root (NO_TRANSLATION, NO_NORMALISATION), var: p-->
 
                 <channelDensityNonUniform id="hdmin73_ModelViewParmSubset_7" ionChannel="hdmin73" ion="hd" erev="-30.0 mV">
                     <variableParameter parameter="condDensity" segmentGroup="ModelViewParmSubset_7">
-                        <inhomogeneousValue inhomogeneousParameter="PathLengthOverDendSubset_7" value="1.0E9 * 5.0E-10 * (1 + ((3 * p) / 100))"/>    <!--Note: conversion factor (1.0E9 * ) included to convert to units: GENESIS SI Units-->
+                        <inhomogeneousValue inhomogeneousParameter="PathLengthOverDendSubset_7" value="1.0E9 * 5.0E-10 * (1 + ((3 * p) / 100))"/>
 
                     </variableParameter>
                 </channelDensityNonUniform>
-
-
-                <!--kad with param: gmax = f(p) = (H(p - 100) * 3.0E-7) * (1 + (p / 100)) on ParameterisedGroup: PathLengthOverDendrites on: dendrite_group with metric: Path Length from root (NO_TRANSLATION, NO_NORMALISATION), var: p-->
 
                 <channelDensityNonUniform id="kad_dendrite_group" ionChannel="kad" ion="k" erev="-90.0 mV">
                     <variableParameter parameter="condDensity" segmentGroup="dendrite_group">
-                        <inhomogeneousValue inhomogeneousParameter="PathLengthOverDendrites" value="1.0E9 * (H(p - 100) * 3.0E-7) * (1 + (p / 100))"/>    <!--Note: conversion factor (1.0E9 * ) included to convert to units: GENESIS SI Units-->
+                        <inhomogeneousValue inhomogeneousParameter="PathLengthOverDendrites" value="1.0E9 * (H(p - 100) * 3.0E-7) * (1 + (p / 100))"/>
 
                     </variableParameter>
                 </channelDensityNonUniform>
-
-
-                <!--kap with param: gmax = f(p) = (H(100 + ((-1) * p)) * 3.0E-7) * (1 + (p / 100)) on ParameterisedGroup: PathLengthOverDendrites on: dendrite_group with metric: Path Length from root (NO_TRANSLATION, NO_NORMALISATION), var: p-->
 
                 <channelDensityNonUniform id="kap_dendrite_group" ionChannel="kap" ion="k" erev="-90.0 mV">
                     <variableParameter parameter="condDensity" segmentGroup="dendrite_group">
-                        <inhomogeneousValue inhomogeneousParameter="PathLengthOverDendrites" value="1.0E9 * (H(100 + ((-1) * p)) * 3.0E-7) * (1 + (p / 100))"/>    <!--Note: conversion factor (1.0E9 * ) included to convert to units: GENESIS SI Units-->
+                        <inhomogeneousValue inhomogeneousParameter="PathLengthOverDendrites" value="1.0E9 * (H(100 + ((-1) * p)) * 3.0E-7) * (1 + (p / 100))"/>
 
                     </variableParameter>
                 </channelDensityNonUniform>
-
 
                 <spikeThresh value="0.0 mV"/>
 
@@ -19556,7 +19542,7 @@
 
             </intracellularProperties>
 
-        </biophysicalProperties>
+        </biophysicalProperties-->
 
     </cell>
 
