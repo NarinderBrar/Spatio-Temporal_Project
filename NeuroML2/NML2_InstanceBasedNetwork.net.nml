@@ -11,8 +11,6 @@
     <expOneSynapse id="syn2" gbase="10nS" erev="0mV" tauDecay="2ms" />
 
     <baseCellMembPot id="iaf" leakReversal="-60mV" thresh="-55mV" reset="-62mV" C="1.0nF" leakConductance="0.05uS">
-      <cell id="CA1">
-      </cell>
     </baseCellMembPot>
 
     <pulseGenerator id="pulseGen1" delay="100ms" duration="100ms" amplitude="0.3nA"/>
@@ -20,7 +18,7 @@
 
     <network id="InstanceBasedNetwork">
 
-        <population id="iafCells" type="populationList" component="iaf" size="2">
+        <population id="iafCells" type="populationList" component="iaf" size="3">
             <instance id="0">
                 <location x="120" y="230" z="567"/>
             </instance>
