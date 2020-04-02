@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.githubusercontent.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="CA1">
+
+    <include href="hd.channel.nml"/>
+
+    <include href="hd__vhalflmin73.channel.nml"/>
+
+    <include href="hdmin73.channel.nml"/>
+
+    <include href="kad.channel.nml"/>
+
+    <include href="kap.channel.nml"/>
+
+    <include href="kdr.channel.nml"/>
+
+    <include href="na3__ar1.channel.nml"/>
+
+    <include href="nax.channel.nml"/>
+
+    <include href="pas.channel.nml"/>
+
+    <cell id="CA1">
+
+        <notes>Cell exported from NEURON ModelView in NeuroML Level 2 format and imported into neuroConstruct. The densities of hd, kap, kad have been replaced with variable mechanisms recreating the densities as used in the original model from ModelDB.</notes>
+
+        <morphology id="morphology_CA1">
+
+            <segment id="0" name="Seg0_soma_0">
+                <proximal x="0.0" y="0.0" z="0.01" diameter="7.491"/>
+                <distal x="0.0" y="0.0" z="7.501" diameter="7.491"/>
+            </segment>
+
+            <segment id="1838" name="Seg0_user5_0">
+                <parent segment="0"/>
+                <proximal x="0.0" y="0.0" z="7.501" diameter="7.491"/>
+                <distal x="3.71" y="20.98" z="7.121" diameter="4.96"/>
+            </segment>
+
+            <segment id="2203" name="Seg8_user5_45">
+                <parent segment="2202"/>
+                <distal x="-52.08" y="507.3" z="-38.349" diameter="1.35"/>
+            </segment>
+
+            <segment id="2204" name="Seg9_user5_45">
+                <parent segment="2203"/>
+                <distal x="-51.02" y="511.58" z="-40.309" diameter="1.35"/>
+            </segment>
+
+            <segment id="2205" name="Seg10_user5_45">
+                <parent segment="2204"/>
+                <distal x="-50.57" y="518.06" z="-42.949" diameter="1.35"/>
+            </segment>
+
+            <segmentGroup id="soma_0" neuroLexId="sao864921383">
+                <member segment="0"/>
+            </segmentGroup>
+
+
+            <segmentGroup id="dendrite_15" neuroLexId="sao864921383">
+                <member segment="1838"/>
+                <member segment="2203"/>
+                <member segment="2204"/>
+                <member segment="2205"/>
+            </segmentGroup>
+
+
+            <segmentGroup id="all">
+                <include segmentGroup="soma_0"/>
+                <include segmentGroup="dendrite_15"/>
+
+                <inhomogeneousParameter id="ZeroToOneOverCell" variable="p" metric="Path Length from root">
+                    <proximal translationStart="0"/>
+                    <distal normalizationEnd="1"/>
+                </inhomogeneousParameter>
+
+                <inhomogeneousParameter id="PathLengthOverCell" variable="p" metric="Path Length from root">
+                </inhomogeneousParameter>
+
+            </segmentGroup>
+        </morphology>
+
+            <!--Adding the biophysical parameters-->
+
+        <biophysicalProperties id="biophys">
+
+        </biophysicalProperties>
+
+    </cell>
+
+</neuroml>
