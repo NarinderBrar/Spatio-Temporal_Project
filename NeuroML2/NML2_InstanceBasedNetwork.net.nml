@@ -6,20 +6,17 @@
     id="NML2_InstanceBasedNetwork">
 
 <!-- Example of a network specified as a set of location and connection instances in NeuroML 2 -->
+  <include href="CA1.cell.nml"/>
 
     <expOneSynapse id="syn1" gbase="5nS" erev="0mV" tauDecay="3ms" />
     <expOneSynapse id="syn2" gbase="10nS" erev="0mV" tauDecay="2ms" />
-
-    <cell id="iaf">
-    </cell>
-
-
+    
     <pulseGenerator id="pulseGen1" delay="100ms" duration="100ms" amplitude="0.3nA"/>
     <pulseGenerator id="pulseGen2" delay="100ms" duration="100ms" amplitude="0.4nA"/>
 
     <network id="InstanceBasedNetwork">
 
-        <population id="iafCells" type="populationList" component="iaf" size="3">
+        <population id="iafCells" type="populationList" component="CA1" size="3">
             <instance id="0">
                 <location x="120" y="230" z="567"/>
             </instance>
