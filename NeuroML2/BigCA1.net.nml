@@ -4,7 +4,7 @@
     <notes>
     </notes>
 
-    <include href="CA1.cell.nml"/>
+    <include href="SimpleCell.cell.nml"/>
     <include href="hd.channel.nml"/>
     <include href="hd__vhalflmin73.channel.nml"/>
     <include href="hdmin73.channel.nml"/>
@@ -23,7 +23,7 @@
         <property tag="recommended_dt_ms" value="0.025"/>
         <property tag="recommended_duration_ms" value="10"/>
 
-        <population id="CA1_CG" component="CA1" type="populationList" size="1">
+        <population id="CA1_CG" component="SimpleCell" type="populationList" size="1">
            <annotation>
                 <property tag="color" value="0.8984375 0.8984375 0.8984375"/>
             </annotation>
