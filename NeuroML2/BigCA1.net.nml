@@ -24,7 +24,7 @@
     <include href="nax.channel.nml"/>
     <include href="pas.channel.nml"/>-->
 
-    <pulseGenerator id="Input_1" delay="0.002s" duration="0.005s" amplitude="1.8E-9A"/>
+    <!--<pulseGenerator id="Input_1" delay="0.002s" duration="0.005s" amplitude="1.8E-9A"/-->
 
 
     <network id="network_CA1PyramidalCell" type="networkWithTemperature" temperature="35.0 degC">
@@ -42,9 +42,9 @@
             </instance>
         </population>
 
-        <inputList id="Input_1" component="Input_1" population="CA1_CG">
+        <!--inputList id="Input_1" component="Input_1" population="CA1_CG">
             <input id="0" target="../CA1_CG/0/CA1" destination="synapses"/>
-        </inputList>
+        </inputList-->
 
     </network>
 </neuroml>
