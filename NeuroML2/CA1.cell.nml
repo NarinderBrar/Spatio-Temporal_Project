@@ -19,7 +19,7 @@
 
     <include href="pas.channel.nml"/>
 
-    <baseCellMembPot id="CA1">
+    <cell id="CA1">
 
         <notes>Cell exported from NEURON ModelView in NeuroML Level 2 format and imported into neuroConstruct. The densities of hd, kap, kad have been replaced with variable mechanisms recreating the densities as used in the original model from ModelDB.</notes>
 
@@ -19553,6 +19553,6 @@
 
         </biophysicalProperties>
 
-    </baseCellMembPot>
+    </cell>
 
 </neuroml>
