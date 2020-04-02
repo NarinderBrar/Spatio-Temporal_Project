@@ -19,7 +19,7 @@
                 <location x="0" y="0" z="0"/>
             </instance>
             <instance id="1">
-                <location x="10" y="450" z="10"/>
+                <location x="10" y="10" z="10"/>
             </instance>
         </population>
 
