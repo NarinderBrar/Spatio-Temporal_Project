@@ -6,7 +6,7 @@
   https://raw.githubusercontent.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd"
   id="CA1">
 
-    <include href="hd.channel.nml"/>
+    <!--include href="hd.channel.nml"/>
 
     <include href="hd__vhalflmin73.channel.nml"/>
 
@@ -22,7 +22,7 @@
 
     <include href="nax.channel.nml"/>
 
-    <include href="pas.channel.nml"/>
+    <include href="pas.channel.nml"/-->
 
     <cell id="CA1">
 
@@ -19481,7 +19481,7 @@
 
             <!--Adding the biophysical parameters-->
 
-        <!--biophysicalProperties id="biophys">
+        <biophysicalProperties id="biophys">
 
             <membraneProperties>
 
@@ -19532,11 +19532,11 @@
 
                 <!--kap with param: gmax = f(p) = (H(100 + ((-1) * p)) * 3.0E-7) * (1 + (p / 100)) on ParameterisedGroup: PathLengthOverDendrites on: dendrite_group with metric: Path Length from root (NO_TRANSLATION, NO_NORMALISATION), var: p-->
 
-                <!--channelDensityNonUniform id="kap_dendrite_group" ionChannel="kap" ion="k" erev="-90.0 mV">
+                <channelDensityNonUniform id="kap_dendrite_group" ionChannel="kap" ion="k" erev="-90.0 mV">
                     <variableParameter parameter="condDensity" segmentGroup="dendrite_group">
                         <inhomogeneousValue inhomogeneousParameter="PathLengthOverDendrites" value="1.0E9 * (H(100 + ((-1) * p)) * 3.0E-7) * (1 + (p / 100))"/>    <!--Note: conversion factor (1.0E9 * ) included to convert to units: GENESIS SI Units-->
 
-                    <!--/variableParameter>
+                    </variableParameter>
                 </channelDensityNonUniform>
 
 
@@ -19556,7 +19556,7 @@
 
             </intracellularProperties>
 
-        </biophysicalProperties-->
+        </biophysicalProperties>
 
     </cell>
 
