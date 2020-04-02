@@ -12,6 +12,12 @@
 
     <baseCellMembPot id="iaf" leakReversal="-60mV" thresh="-55mV" reset="-62mV" C="1.0nF" leakConductance="0.05uS">
       <cell id="CA1">
+        <morphology id="NeuroMorpho_PyrCell123">
+            <segment id ="0" name="Soma">
+                <proximal x="0" y="0" z="0" diameter="10"/>
+                <distal x="10" y="0" z="0" diameter="10"/>
+            </segment>
+        </morphology>
       </cell>
     </baseCellMembPot>
 
@@ -29,25 +35,14 @@
             </instance>
         </population>
 
-
         <projection id="internal1" presynapticPopulation="iafCells" postsynapticPopulation="iafCells" synapse="syn1">
-            <!--TODO: Fix! want to define synapse in here, so that multiple synapses per connection can be defined
-            <synapseComponent component="syn1"/>-->
-            <!--TODO: Fix! want to use preCellId="0"  -->
             <connection id="0" preCellId="../iafCells/0/iaf" postCellId="../iafCells/1/iaf"/>
         </projection>
-
-        <projection id="internal2" presynapticPopulation="iafCells" postsynapticPopulation="iafCells" synapse="syn2">
-            <connection id="0" preCellId="../iafCells/0/iaf" postCellId="../iafCells/2/iaf"/>
-        </projection>
-
 
         <inputList id="stimInput" component="pulseGen1" population="iafCells">
             <!--TODO: Fix! want to use target="0"  -->
             <input id="0" target="../iafCells/0/iaf" destination="synapses"/>
         </inputList>
 
-
     </network>
-
 </neuroml>
