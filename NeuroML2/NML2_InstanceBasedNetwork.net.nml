@@ -11,7 +11,6 @@
     </baseCellMembPot>
 
     <pulseGenerator id="pulseGen1" delay="100ms" duration="100ms" amplitude="0.3nA"/>
-    <pulseGenerator id="pulseGen2" delay="100ms" duration="100ms" amplitude="0.4nA"/>
 
     <network id="InstanceBasedNetwork">
 
