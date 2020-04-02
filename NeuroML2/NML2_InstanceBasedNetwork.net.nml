@@ -9,6 +9,7 @@
 
     <baseCellMembPot id="iaf" leakReversal="-60mV" thresh="-55mV" reset="-62mV" C="1.0nF" leakConductance="0.05uS">
       <morphology id="morphology_CA1">
+
       </morphology>
     </baseCellMembPot>
 
