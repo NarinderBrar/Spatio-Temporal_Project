@@ -16,12 +16,10 @@
     <include href="nax.channel.nml"/>
     <include href="pas.channel.nml"/>
 
-    <pulseGenerator id="Input_1" delay="0.002s" duration="0.005s" amplitude="1.8E-9A"/>
-
     <expOneSynapse id="syn1" gbase="5nS" erev="0mV" tauDecay="3ms" />
     <iafCell id="iaf" leakReversal="-60mV" thresh="-55mV" reset="-62mV" C="1.0nF" leakConductance="0.05uS"/>
     <pulseGenerator id="pulseGen1" delay="100ms" duration="100ms" amplitude="0.3nA"/>
-    
+
     <network id="network_CA1PyramidalCell" type="networkWithTemperature" temperature="35.0 degC">
         <property tag="recommended_dt_ms" value="0.025"/>
         <property tag="recommended_duration_ms" value="10"/>
@@ -34,10 +32,6 @@
                 <location x="0.0" y="0.0" z="0.0"/>
             </instance>
         </population>
-
-        <inputList id="Input_1" component="Input_1" population="CA1_CG">
-            <input id="0" target="../CA1_CG/0/CA1" destination="synapses"/>
-        </inputList>
 
         <population id="iafCells" type="populationList" component="iaf" size="2">
             <instance id="0">
