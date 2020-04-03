@@ -20,10 +20,13 @@
 
     <network id="net1">
 
-        <population id="neuron" component="generic_iaf_cell" type="populationList">
+        <population id="neuron" component="generic_iaf_cell" type="populationList" size= 2>
             <property tag="color" value="1 0 .4"/>
             <instance id="0">
                 <location y="0" x="0" z="0"/>
+            </instance>
+            <instance id="1">
+                <location y="0" x="20" z="0"/>
             </instance>
         </population>
 
