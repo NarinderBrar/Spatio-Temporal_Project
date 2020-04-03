@@ -19,6 +19,7 @@
 
     <pulseGenerator id="Input_1" delay="0.002s" duration="0.005s" amplitude="1.8E-9A"/>
 
+    <expOneSynapse id="syn1" gbase="5nS" erev="0mV" tauDecay="3ms" />
     <iafCell id="iaf" leakReversal="-60mV" thresh="-55mV" reset="-62mV" C="1.0nF" leakConductance="0.05uS"/>
 
     <network id="network_CA1PyramidalCell" type="networkWithTemperature" temperature="35.0 degC">
