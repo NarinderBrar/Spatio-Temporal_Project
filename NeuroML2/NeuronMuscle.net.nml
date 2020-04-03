@@ -30,7 +30,7 @@
         <population id="muscle" component="SingleCompMuscleCell" type="populationList">
             <property tag="color" value="0 .6 0"/>
             <instance id="0">
-                <location y="0" x="50" z="0"/>
+                <location y="0" x="10" z="0"/>
             </instance>
         </population>
 
