@@ -4,9 +4,8 @@
     <notes>
     </notes>
 
-
     <include href="CA1.cell.nml"/>
-    
+
     <include href="hd.channel.nml"/>
     <include href="hd__vhalflmin73.channel.nml"/>
     <include href="hdmin73.channel.nml"/>
@@ -20,6 +19,7 @@
 
     <pulseGenerator id="Input_1" delay="0.002s" duration="0.005s" amplitude="1.8E-9A"/>
 
+    <iafCell id="iaf" leakReversal="-60mV" thresh="-55mV" reset="-62mV" C="1.0nF" leakConductance="0.05uS"/>
 
     <network id="network_CA1PyramidalCell" type="networkWithTemperature" temperature="35.0 degC">
 
