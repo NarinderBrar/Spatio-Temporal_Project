@@ -6,8 +6,7 @@
 
 
     <include href="CA1.cell.nml"/>
-    <include href="SingleCompMuscleCell.cell.nml"/>
-
+    
     <include href="hd.channel.nml"/>
     <include href="hd__vhalflmin73.channel.nml"/>
     <include href="hdmin73.channel.nml"/>
