@@ -25,7 +25,7 @@
         </morphology>
 
 
-        <!--biophysicalProperties id="biophys">
+        <biophysicalProperties id="biophys">
 
             <membraneProperties>
 
@@ -57,7 +57,7 @@
 
             </intracellularProperties>
 
-        </biophysicalProperties-->
+        </biophysicalProperties>
 
     </cell>
 </neuroml>
