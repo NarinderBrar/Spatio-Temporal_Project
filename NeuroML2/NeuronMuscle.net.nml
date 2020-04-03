@@ -25,9 +25,6 @@
             <instance id="0">
                 <location y="0" x="0" z="0"/>
             </instance>
-            <instance id="1">
-                <location y="0" x="20" z="0"/>
-            </instance>
         </population>
 
         <population id="muscle" component="SingleCompMuscleCell" type="populationList">
