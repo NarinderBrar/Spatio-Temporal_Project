@@ -7,9 +7,7 @@
 
     <expOneSynapse id="syn1" gbase="5nS" erev="0mV" tauDecay="3ms" />
 
-    <baseCellMembPot id="iaf" leakReversal="-60mV" thresh="-55mV" reset="-62mV" C="1.0nF" leakConductance="0.05uS">
-    </baseCellMembPot>
-
+    <iafCell id="iaf" leakReversal="-60mV" thresh="-55mV" reset="-62mV" C="1.0nF" leakConductance="0.05uS"/>
 
     <pulseGenerator id="pulseGen1" delay="100ms" duration="100ms" amplitude="0.3nA"/>
 
