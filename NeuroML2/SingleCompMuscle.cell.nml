@@ -11,7 +11,7 @@
     <include href="CaPool.nml"/>
 
 
-    <baseCellMembPot id="SingleCompMuscleCell" leakReversal="-60mV" thresh="-55mV" reset="-62mV" C="1.0nF" leakConductance="0.05uS">
+    <baseCellMembPot id="SingleCompMuscleCell">
 
         <notes>Only muscle cell body...</notes>
 
