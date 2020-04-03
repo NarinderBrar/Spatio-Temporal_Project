@@ -12,7 +12,6 @@
 
 
     <baseCellMembPot id="SingleCompMuscleCell">
-        <baseIafCapCell> </baseIafCapCell>
         <notes>Only muscle cell body...</notes>
 
         <morphology id="morphology_SingleCompMuscleCell">
