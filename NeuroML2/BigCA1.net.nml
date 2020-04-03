@@ -6,6 +6,7 @@
 
 
     <include href="CA1.cell.nml"/>
+    <include href="SingleCompMuscleCell.cell.nml"/>
 
     <include href="hd.channel.nml"/>
     <include href="hd__vhalflmin73.channel.nml"/>
@@ -17,12 +18,6 @@
     <include href="na3__ar1.channel.nml"/>
     <include href="nax.channel.nml"/>
     <include href="pas.channel.nml"/>
-
-
-    <include href="Leak.channel.nml"/>
-    <include href="k_slow.channel.nml"/>
-    <include href="k_fast.channel.nml"/>
-    <include href="ca_boyle.channel.nml"/>
 
     <pulseGenerator id="Input_1" delay="0.002s" duration="0.005s" amplitude="1.8E-9A"/>
 
