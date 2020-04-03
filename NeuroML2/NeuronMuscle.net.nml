@@ -15,8 +15,8 @@
 
     <iafCell id="generic_iaf_cell" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
 
-    <pulseGenerator id="offset_current" delay="10ms" duration="290ms" amplitude="0.45nA"/>
-    <pulseGenerator id="offsetToMin75" delay="0ms" duration="1000ms" amplitude="-120 pA" />
+    <pulseGenerator id="neuron_current" delay="1ms" duration="290ms" amplitude="0.45nA"/>
+    <pulseGenerator id="muscle_current" delay="0ms" duration="1000ms" amplitude="-120 pA" />
 
     <network id="net1">
 
@@ -38,11 +38,11 @@
             <connection preCellId="../neuron/0/generic_iaf_cell" postCellId="../muscle/0/SingleCompMuscleCell" id="0"/>
         </projection>
 
-        <inputList id="offset_stim" component="offset_current" population="neuron">
+        <inputList id="offset_stim" component="neuron_current" population="neuron">
             <input id="0" target="../neuron/0/generic_iaf_cell" destination="synapses"/>
         </inputList>
 
-        <inputList id="offsetToMin75_stim" component="offsetToMin75" population="muscle">
+        <inputList id="offsetToMin75_stim" component="muscle_current" population="muscle">
             <input id="0" target="../muscle/0/SingleCompMuscleCell" destination="synapses"/>
         </inputList>
 
