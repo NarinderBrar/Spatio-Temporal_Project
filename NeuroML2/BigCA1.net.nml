@@ -6,6 +6,8 @@
 
 
     <include href="CA1.cell.nml"/>
+    <include href="SingleCompMuscleCell.cell.nml"/>
+    
     <include href="hd.channel.nml"/>
     <include href="hd__vhalflmin73.channel.nml"/>
     <include href="hdmin73.channel.nml"/>
@@ -23,7 +25,7 @@
     <include href="k_slow.channel.nml"/>
     <include href="k_fast.channel.nml"/>
     <include href="ca_boyle.channel.nml"/>
-    <include href="SingleCompMuscleCell.cell.nml"/>
+
 
     <pulseGenerator id="Input_1" delay="0.002s" duration="0.005s" amplitude="1.8E-9A"/>
 
@@ -53,6 +55,7 @@
             <input id="0" target="../CA1_CG/0/CA1" destination="synapses"/>
         </inputList>
     </network>
+
     <network id="net1">
             <population id="mc1" component="SingleCompMuscleCell" type="populationList">
                 <instance id="0">
