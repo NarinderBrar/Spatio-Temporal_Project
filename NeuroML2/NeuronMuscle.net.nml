@@ -8,7 +8,7 @@
     <include href="k_slow.channel.nml"/>
     <include href="k_fast.channel.nml"/>
     <include href="ca_boyle.channel.nml"/>
-    
+
     <include href="SingleCompMuscle.cell.nml"/>
 
     <expTwoSynapse id="exc_syn_1conns" erev="0mV" gbase="25nS" tauDecay="10ms" tauRise="1ms"/>
@@ -38,7 +38,7 @@
             <connection preCellId="../neuron/0/generic_iaf_cell" postCellId="../muscle/0/SingleCompMuscleCell" id="0"/>
         </projection>
 
-        <inputList id="offset_stim" component="offset_current" population="generic_iaf_cell">
+        <inputList id="offset_stim" component="offset_current" population="neuron">
             <input id="0" target="../neuron/0/generic_iaf_cell" destination="synapses"/>
         </inputList>
 
