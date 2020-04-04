@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <neuroml
   xmlns="http://www.neuroml.org/schema/neuroml2"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -5,7 +6,7 @@
   xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2
   https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta5.xsd"
   id="NeuroML2_file_exported_from_NEURON">
-  
+
     <include href="pas.channel.nml"></include>
     <include href="Ih.channel.nml"></include>
     <include href="NaTs2_t.channel.nml"></include>
@@ -19,6 +20,7 @@
     <include href="K_Pst.channel.nml"></include>
     <include href="CaDynamics_E2_NML2.nml"></include>
     <include href="Ca_LVAst.channel.nml"></include>
+
     <cell id="Spatio-Temporal-Cell">
 
     <notes>
