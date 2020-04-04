@@ -8,44 +8,44 @@
   id="NeuroML2_file_exported_from_NEURON">
 
   <notes>
-    Export of a cell model obtained from the BBP NeocorticalMicrocircuit Collaboration Portal into NeuroML2
-    For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/microcircuit#/metype/L23_PC_cADpyr/details
   </notes>
-    <include href="Spatio-Temporal-Cell.cell.nml"></include>
 
-    <expTwoSynapse id="exc_syn_1conns" erev="0mV" gbase="25nS" tauDecay="10ms" tauRise="1ms"/>
+  <include href="Spatio-Temporal-Cell.cell.nml"></include>
 
-    <pulseGenerator id="constant_hyperpolarizing_current" delay="0ms" duration="20s" amplitude="-70pA"/>
-    <pulseGenerator id="transient_pulse_current" delay="700ms" duration="2000ms" amplitude="180pA"/>
+  <expTwoSynapse id="exc_syn_1conns" erev="0mV" gbase="25nS" tauDecay="10ms" tauRise="1ms"/>
 
-    <iafCell id="generic_iaf_cell" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
+  <pulseGenerator id="constant_hyperpolarizing_current" delay="0ms" duration="20s" amplitude="-70pA"/>
+  <pulseGenerator id="transient_pulse_current" delay="700ms" duration="2000ms" amplitude="180pA"/>
 
-    <network id="network" type="networkWithTemperature" temperature="34 degC">
-        <population id="Pop_cADpyr" component="Spatio-Temporal-Cell" size="1" type="populationList">
-            <property tag="region" value="L23"/>
-            <property tag="color" value="0.6 0 0"/>
-            <instance id="0">
-                <location x="0." y="0." z="0."/>
-            </instance>
-        </population>
+  <iafCell id="generic_iaf_cell" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
 
-        <population id="neuron" component="generic_iaf_cell" type="populationList">
-          <property tag="color" value="1 0 .4"/>
+  <network id="network" type="networkWithTemperature" temperature="34 degC">
+
+      <population id="neuron" component="Spatio-Temporal-Cell" size="1" type="populationList">
+          <property tag="region" value="L23"/>
+          <property tag="color" value="0.6 0 0"/>
           <instance id="0">
-            <location y="10" x="0" z="0"/>
+              <location x="0." y="0." z="0."/>
           </instance>
-        </population>
+      </population>
 
-        <projection id="N_M" postsynapticPopulation="Pop_cADpyr" presynapticPopulation="neuron" synapse="exc_syn_1conns">
-          <connection preCellId="../neuron/0/generic_iaf_cell" postCellId="../Pop_cADpyr/0/Spatio-Temporal-Cell" id="0"/>
-        </projection>
+      <population id="iaf_cell" component="generic_iaf_cell" type="populationList">
+        <property tag="color" value="1 0 .4"/>
+        <instance id="0">
+          <location y="10" x="0" z="0"/>
+        </instance>
+      </population>
 
-        <inputList id="hyp_input" population="Pop_cADpyr" component="constant_hyperpolarizing_current">
-            <input id="0" target="../Pop_cADpyr/0/Spatio-Temporal-Cell" destination="synapses"/>
-        </inputList>
+      <projection id="N_M" postsynapticPopulation="neuron" presynapticPopulation="iaf_cell" synapse="exc_syn_1conns">
+        <connection preCellId="../iaf_cell/0/generic_iaf_cell" postCellId="../neuron/0/Spatio-Temporal-Cell" id="0"/>
+      </projection>
 
-        <inputList id="step_input" population="Pop_cADpyr" component="transient_pulse_current">
-            <input id="0" target="../Pop_cADpyr/0/Spatio-Temporal-Cell" destination="synapses"/>
-        </inputList>
-    </network>
+      <inputList id="hyp_input" population="neuron" component="constant_hyperpolarizing_current">
+          <input id="0" target="../neuron/0/Spatio-Temporal-Cell" destination="synapses"/>
+      </inputList>
+
+      <inputList id="step_input" population="neuron" component="transient_pulse_current">
+          <input id="0" target="../neuron/0/Spatio-Temporal-Cell" destination="synapses"/>
+      </inputList>
+  </network>
 </neuroml>
