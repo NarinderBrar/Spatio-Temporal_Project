@@ -12,6 +12,7 @@
     For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/microcircuit#/metype/L23_PC_cADpyr/details
   </notes>
     <include href="Spatio-Temporal-Cell.cell.nml"></include>
+    <include href="SingleCompMuscleCell.cell.nml"></include>
 
     <include href="Leak.channel.nml"/>
     <include href="k_slow.channel.nml"/>
