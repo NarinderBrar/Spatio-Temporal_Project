@@ -6,7 +6,7 @@ Export of a cell model obtained from the BBP NeocorticalMicrocircuit Collaborati
 For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/microcircuit#/metype/L23_PC_cADpyr/details
 
 </notes>
-    <include href="L23_cADpyr.cell.nml"></include>
+    <include href="Spatio-Temporal-Cell.cell.nml"></include>
 
     <expTwoSynapse id="exc_syn_1conns" erev="0mV" gbase="25nS" tauDecay="10ms" tauRise="1ms"/>
 
@@ -16,7 +16,7 @@ For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/micr
     <iafCell id="generic_iaf_cell" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
 
     <network id="network" type="networkWithTemperature" temperature="34 degC">
-        <population id="Pop_cADpyr" component="L23_cADpyr" size="1" type="populationList">
+        <population id="Pop_cADpyr" component="Spatio-Temporal-Cell" size="1" type="populationList">
             <property tag="region" value="L23"/>
             <property tag="color" value="0.6 0 0"/>
             <instance id="0">
@@ -36,10 +36,10 @@ For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/micr
         </projection>
 
         <inputList id="hyp_input" population="Pop_cADpyr" component="constant_hyperpolarizing_current">
-            <input id="0" target="../Pop_cADpyr/0/L23_cADpyr" destination="synapses"/>
+            <input id="0" target="../Pop_cADpyr/0/Spatio-Temporal-Cell" destination="synapses"/>
         </inputList>
         <inputList id="step_input" population="Pop_cADpyr" component="transient_pulse_current">
-            <input id="0" target="../Pop_cADpyr/0/L23_cADpyr" destination="synapses"/>
+            <input id="0" target="../Pop_cADpyr/0/Spatio-Temporal-Cell" destination="synapses"/>
         </inputList>
     </network>
 </neuroml>
