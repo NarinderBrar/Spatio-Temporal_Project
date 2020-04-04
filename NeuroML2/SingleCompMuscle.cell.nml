@@ -18,9 +18,9 @@
 
         <morphology id="morphology_SingleCompMuscleCell">
 
-            <segment id="0" name="soma">
-                <proximal x="0.0" y="0.0" z="0.0" diameter="10"/>
-                <distal x="0.0" y="0.0" z="230.3459" diameter="10"/>
+            <segment id ="0" name="Soma">
+                <proximal x="0" y="0" z="0" diameter="10"/>
+                <distal x="10" y="0" z="0" diameter="10"/>
             </segment>
 
             <segment id="1" name="dend2">
