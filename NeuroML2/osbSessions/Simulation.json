@@ -6,7 +6,7 @@
 		"aspectConfigurations": [{
 			"id": 602,
 			"instance": "network",
-			"watchedVariables": ["network.neuron[0].Seg0_soma_0_0.v", "network.neuron[0].Seg1_axon_1_1148.v", "network.neuron[0].Seg11_apic_14_952.v", "network.neuron[0].Seg11_apic_21_1098.v"],
+			"watchedVariables": ["network.neuron[0].Seg0_soma_0_0.v", "network.neuron[0].Seg1_axon_1_1148.v", "network.neuron[0].Seg11_apic_14_952.v", "network.neuron[0].Seg11_apic_21_1098.v", "network.iaf_cell[0].v"],
 			"modelParameters": [],
 			"simulatorConfiguration": {
 				"id": 600,
