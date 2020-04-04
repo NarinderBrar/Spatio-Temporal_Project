@@ -6,11 +6,11 @@
 		"aspectConfigurations": [{
 			"id": 602,
 			"instance": "network",
-			"watchedVariables": ["network.neuron[0].Seg0_soma_0_0.v", "network.neuron[0].Seg1_axon_1_1148.v", "network.neuron[0].Seg11_apic_14_952.v", "network.neuron[0].Seg11_apic_21_1098.v"],
+			"watchedVariables": ["network.Pop_cADpyr[0].Seg0_soma_0_0.v", "network.Pop_cADpyr[0].Seg1_axon_1_1148.v", "network.Pop_cADpyr[0].Seg11_apic_14_952.v", "network.Pop_cADpyr[0].Seg11_apic_21_1098.v"],
 			"modelParameters": [],
 			"simulatorConfiguration": {
 				"id": 600,
-				"simulatorId": "neuronSimulator",
+				"simulatorId": "Pop_cADpyrSimulator",
 				"timestep": 2.5E-5,
 				"length": 3.5,
 				"parameters": {
@@ -85,7 +85,7 @@
 								"radius": 781.12
 							},
 							"colorMap": {
-								"network.neuron": "#990000"
+								"network.Pop_cADpyr": "#990000"
 							},
 							"opacityMap": {},
 							"geometryTypeMap": {},
@@ -101,7 +101,7 @@
 		"aspectConfigurations": [{
 			"id": 603,
 			"instance": "network",
-			"watchedVariables": ["network.neuron[0].Seg0_soma_0_0.v", "network.neuron[0].Seg1_axon_1_1148.v", "network.neuron[0].Seg11_apic_14_952.v", "network.neuron[0].Seg11_apic_21_1098.v"],
+			"watchedVariables": ["network.Pop_cADpyr[0].Seg0_soma_0_0.v", "network.Pop_cADpyr[0].Seg1_axon_1_1148.v", "network.Pop_cADpyr[0].Seg11_apic_14_952.v", "network.Pop_cADpyr[0].Seg11_apic_21_1098.v"],
 			"modelParameters": [{
 				"id": 408,
 				"variable": "neuroml.Spatio-Temporal-Cell.transient_pulse_current.amplitude",
@@ -184,7 +184,7 @@
 								"radius": 467.58
 							},
 							"colorMap": {
-								"network.neuron": "#990000"
+								"network.Pop_cADpyr": "#990000"
 							},
 							"opacityMap": {},
 							"geometryTypeMap": {},
@@ -213,7 +213,7 @@
 					"componentSpecific": {
 						"radiusMap": {},
 						"colorMap": {
-							"network.neuron": "#990000"
+							"network.Pop_cADpyr": "#990000"
 						}
 					}
 				}
