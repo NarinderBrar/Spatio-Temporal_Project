@@ -6,7 +6,7 @@
 		"aspectConfigurations": [{
 			"id": 602,
 			"instance": "network",
-			"watchedVariables": ["network.neuron[0].Seg0_soma_0_0.v", "network.neuron[0].Seg1_axon_1_1148.v", "network.neuron[0].Seg11_apic_14_952.v", "network.neuron[0].Seg11_apic_21_1098.v"],
+			"watchedVariables": ["network.Pop_cADpyr[0].Seg0_soma_0_0.v", "network.Pop_cADpyr[0].Seg1_axon_1_1148.v", "network.Pop_cADpyr[0].Seg11_apic_14_952.v", "network.Pop_cADpyr[0].Seg11_apic_21_1098.v"],
 			"modelParameters": [],
 			"simulatorConfiguration": {
 				"id": 600,
@@ -85,7 +85,7 @@
 								"radius": 781.12
 							},
 							"colorMap": {
-								"network.neuron": "#990000"
+								"network.Pop_cADpyr": "#990000"
 							},
 							"opacityMap": {},
 							"geometryTypeMap": {},
@@ -101,10 +101,10 @@
 		"aspectConfigurations": [{
 			"id": 603,
 			"instance": "network",
-			"watchedVariables": ["network.neuron[0].Seg0_soma_0_0.v", "network.neuron[0].Seg1_axon_1_1148.v", "network.neuron[0].Seg11_apic_14_952.v", "network.neuron[0].Seg11_apic_21_1098.v"],
+			"watchedVariables": ["network.Pop_cADpyr[0].Seg0_soma_0_0.v", "network.Pop_cADpyr[0].Seg1_axon_1_1148.v", "network.Pop_cADpyr[0].Seg11_apic_14_952.v", "network.Pop_cADpyr[0].Seg11_apic_21_1098.v"],
 			"modelParameters": [{
 				"id": 408,
-				"variable": "neuroml.Spatio-Temporal-Cell.transient_pulse_current.amplitude",
+				"variable": "neuroml.L23_cADpyr.transient_pulse_current.amplitude",
 				"value": "-100"
 			}],
 			"simulatorConfiguration": {
@@ -184,7 +184,7 @@
 								"radius": 467.58
 							},
 							"colorMap": {
-								"network.neuron": "#990000"
+								"network.Pop_cADpyr": "#990000"
 							},
 							"opacityMap": {},
 							"geometryTypeMap": {},
@@ -199,7 +199,7 @@
 	"activeExperimentId": 605,
 	"geppettoModel": {
 		"id": 1106,
-		"url": "/NeuroML_Starter.xmi",
+		"url": "/L23_cADpyr_MODELdd9593b40c62c616775b98b5a279816e.xmi",
 		"type": "GEPPETTO_PROJECT"
 	},
 	"isPublic": false,
@@ -213,7 +213,7 @@
 					"componentSpecific": {
 						"radiusMap": {},
 						"colorMap": {
-							"network.neuron": "#990000"
+							"network.Pop_cADpyr": "#990000"
 						}
 					}
 				}
