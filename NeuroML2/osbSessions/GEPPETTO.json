@@ -55,7 +55,7 @@
                             "isWidget": true,
                             "dataType": "array",
                             "data": [
-                                "https://raw.githubusercontent.com/OpenSourceBrain/L23PyramidalCellTutorial/master/NeuroML2/osbSessions/l23_intro.json"
+                                "https://raw.githubusercontent.com/NarinderBrar/Spatio-Temporal_Project/master/NeuroML2/osbSessions/l23_intro.json"
                             ],
                             "componentSpecific": {
                                 "activeTutorial": "A brief introduction to a L23 cell",
