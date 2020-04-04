@@ -25,6 +25,9 @@
   <include href="ca_boyle.channel.nml"/>
   <include href="SingleCompMuscle.cell.nml"/>
 
+  <pulseGenerator id="offsetToMin75" delay="0ms" duration="1000ms" amplitude="-120 pA" />
+  <pulseGenerator id="stim_current" delay="10ms" duration="190ms" amplitude="0.23nA"/>
+
   <network id="network" type="networkWithTemperature" temperature="34 degC">
 
       <population id="neuron" component="Spatio-Temporal-Cell" size="1" type="populationList">
@@ -38,7 +41,7 @@
       <population id="iaf_cell" component="generic_iaf_cell" type="populationList">
         <property tag="color" value="1 0 .4"/>
         <instance id="0">
-          <location y="10" x="0" z="0"/>
+          <location y="-50" x="0" z="0"/>
         </instance>
       </population>
 
@@ -48,9 +51,9 @@
           </instance>
       </population>
 
-      <projection id="N_M" postsynapticPopulation="neuron" presynapticPopulation="iaf_cell" synapse="exc_syn_1conns">
+      <!--<projection id="N_M" postsynapticPopulation="neuron" presynapticPopulation="iaf_cell" synapse="exc_syn_1conns">
         <connection preCellId="../iaf_cell/0/generic_iaf_cell" postCellId="../neuron/0/Spatio-Temporal-Cell" id="0"/>
-      </projection>
+      </projection-->
 
       <inputList id="hyp_input" population="neuron" component="constant_hyperpolarizing_current">
           <input id="0" target="../neuron/0/Spatio-Temporal-Cell" destination="synapses"/>
@@ -58,6 +61,14 @@
 
       <inputList id="step_input" population="neuron" component="transient_pulse_current">
           <input id="0" target="../neuron/0/Spatio-Temporal-Cell" destination="synapses"/>
+      </inputList>
+
+      <inputList id="offsetToMin75_stim" component="offsetToMin75" population="muscle">
+          <input id="0" target="../muscle/0/SingleCompMuscleCell" destination="synapses"/>
+      </inputList>
+
+      <inputList id="stim_current_stim" component="stim_current" population="muscle">
+          <input id="0" target="../muscle/0/SingleCompMuscleCell" destination="synapses"/>
       </inputList>
   </network>
 </neuroml>
