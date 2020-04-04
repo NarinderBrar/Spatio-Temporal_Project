@@ -37,13 +37,6 @@
           </instance>
         </population>
 
-        <population id="muscle" component="SingleCompMuscleCell" type="populationList">
-          <property tag="color" value="0 0 .4"/>
-          <instance id="0">
-            <location y="50" x="50" z="0"/>
-          </instance>
-        </population>
-
         <projection id="N_M" postsynapticPopulation="Pop_cADpyr" presynapticPopulation="neuron" synapse="exc_syn_1conns">
           <connection preCellId="../neuron/0/generic_iaf_cell" postCellId="../Pop_cADpyr/0/L23_PC_simplified" id="0"/>
         </projection>
