@@ -9,7 +9,7 @@
       name="NeuroML">
     <types xsi:type="gep_1:ImportType"
     	id="network"
-        url="https://raw.githubusercontent.com/NarinderBrar/Spatio-Temporal_Project/master/NeuroML2/L23_cADpyr.stepcurrent3.net.nml"
+        url="https://raw.githubusercontent.com/NarinderBrar/Spatio-Temporal_Project/master/NeuroML2/Spatio-Temporal-NML.net.nml"
         modelInterpreterId="neuroMLModelInterpreter"
         referenceURL="testing"/>
   </libraries>
