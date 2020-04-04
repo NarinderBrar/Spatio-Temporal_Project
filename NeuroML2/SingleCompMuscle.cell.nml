@@ -9,18 +9,72 @@
     <include href="k_fast.channel.nml"/>
     <include href="k_slow.channel.nml"/>
     <include href="Leak.channel.nml"/>
+
     <include href="CaPool.nml"/>
 
     <cell id="SingleCompMuscleCell">
+
         <notes>Only muscle cell body...</notes>
+
         <morphology id="morphology_SingleCompMuscleCell">
-            <segment id="0" name="soma">
-                <proximal x="0.0" y="0.0" z="0.0" diameter="10"/>
-                <distal x="0.0" y="0.0" z="230.3459" diameter="10"/>
-            </segment>
+
+          <segment id ="0" name="Soma">
+               <proximal x="0" y="0" z="0" diameter="10"/>
+               <distal x="10" y="0" z="0" diameter="10"/>
+           </segment>
+
+           <segment id ="1" name="MainDendrite1" >
+               <parent segment="0"/>
+               <proximal x="10" y="0" z="0" diameter="3"/>
+               <distal x="20" y="0" z="0" diameter="3"/>
+           </segment>
+
+           <segment id ="2" name="MainDendrite2">
+               <parent segment="1"/>
+               <distal x="30" y="0" z="0" diameter="1"/>
+           </segment>
+
+           <segment id ="3" name="Spine" >
+               <parent segment="2" fractionAlong="0.5"/>
+               <proximal x="25" y="0" z="0" diameter="0.2"/>
+               <distal x="25" y="1" z="0" diameter="0.2"/>
+           </segment>
+
+            <segmentGroup id="soma_group" neuroLexId="sao1044911821">
+                <member segment="0"/>
+            </segmentGroup>
+
+            <segmentGroup id="thick_dendrites">
+                <member segment="1"/>
+                <member segment="2"/>
+            </segmentGroup>
+
+            <segmentGroup id="spines" neuroLexId="sao1145756102">
+                <member segment="3"/>
+            </segmentGroup>
+
+            <segmentGroup id="dendrite_group" neuroLexId="sao1211023249">
+                <include segmentGroup="thick_dendrites"/>
+                <include segmentGroup="spines"/>
+            </segmentGroup>
+
+            <segmentGroup id="middle">
+                <path>
+                    <from segment="1"/>
+                    <to segment="2"/>
+                </path>
+            </segmentGroup>
+
+            <segmentGroup id="tip">
+                <subTree>
+                    <from segment="1"/>
+                </subTree>
+            </segmentGroup>
+
         </morphology>
 
         <biophysicalProperties id="biophys">
+
             <membraneProperties>
                 <channelDensity condDensity="0.0193181 mS_per_cm2" id="Leak_all" ionChannel="Leak" erev="10 mV" ion="non_specific"/>
                 <channelDensity condDensity="0.43584 mS_per_cm2" id="k_slow_all" ionChannel="k_slow" erev="-64.3461 mV" ion="k"/>
@@ -30,6 +84,7 @@
                 <specificCapacitance value="1 uF_per_cm2"/>
                 <initMembPotential value="-75 mV"/>
             </membraneProperties>
+
             <intracellularProperties>
                 <species id="ca"
                          ion="ca"
@@ -38,6 +93,7 @@
                          initialExtConcentration="2E-6 mol_per_cm3"/>
                 <resistivity value="0.1 kohm_cm"/>
             </intracellularProperties>
+
         </biophysicalProperties>
     </cell>
 </neuroml>
