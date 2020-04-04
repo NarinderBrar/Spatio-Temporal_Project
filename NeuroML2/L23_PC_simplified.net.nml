@@ -8,6 +8,8 @@ For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/micr
 </notes>
     <include href="L23_PC_simplified.cell.nml"></include>
 
+    <expTwoSynapse id="exc_syn_1conns" erev="0mV" gbase="25nS" tauDecay="10ms" tauRise="1ms"/>
+
     <pulseGenerator id="constant_hyperpolarizing_current" delay="0ms" duration="20s" amplitude="-70pA"/>
     <pulseGenerator id="transient_pulse_current" delay="700ms" duration="2000ms" amplitude="180pA"/>
 
@@ -29,9 +31,14 @@ For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/micr
           </instance>
         </population>
 
+        <projection id="N_M" postsynapticPopulation="Pop_PC_simplified" presynapticPopulation="neuron" synapse="exc_syn_1conns">
+          <connection preCellId="../neuron/0/generic_iaf_cell" postCellId="../Pop_PC_simplified/0/L23_PC_simplified" id="0"/>
+        </projection>
+
         <inputList id="hyp_input" population="Pop_PC_simplified" component="constant_hyperpolarizing_current">
             <input id="0" target="../Pop_PC_simplified/0/L23_PC_simplified" destination="synapses"/>
         </inputList>
+        
         <inputList id="step_input" population="Pop_PC_simplified" component="transient_pulse_current">
             <input id="0" target="../Pop_PC_simplified/0/L23_PC_simplified" destination="synapses"/>
         </inputList>
