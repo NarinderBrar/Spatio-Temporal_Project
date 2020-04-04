@@ -1,11 +1,15 @@
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta5.xsd" id="NeuroML2_file_exported_from_NEURON">
-    <notes>
+<neuroml
+  xmlns="http://www.neuroml.org/schema/neuroml2"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2
+  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta5.xsd"
+  id="NeuroML2_file_exported_from_NEURON">
 
-Export of a cell model obtained from the BBP NeocorticalMicrocircuit Collaboration Portal into NeuroML2
-
-For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/microcircuit#/metype/L23_PC_cADpyr/details
-
-</notes>
+  <notes>
+    Export of a cell model obtained from the BBP NeocorticalMicrocircuit Collaboration Portal into NeuroML2
+    For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/microcircuit#/metype/L23_PC_cADpyr/details
+  </notes>
     <include href="Spatio-Temporal-Cell.cell.nml"></include>
 
     <expTwoSynapse id="exc_syn_1conns" erev="0mV" gbase="25nS" tauDecay="10ms" tauRise="1ms"/>
@@ -38,6 +42,7 @@ For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/micr
         <inputList id="hyp_input" population="Pop_cADpyr" component="constant_hyperpolarizing_current">
             <input id="0" target="../Pop_cADpyr/0/Spatio-Temporal-Cell" destination="synapses"/>
         </inputList>
+        
         <inputList id="step_input" population="Pop_cADpyr" component="transient_pulse_current">
             <input id="0" target="../Pop_cADpyr/0/Spatio-Temporal-Cell" destination="synapses"/>
         </inputList>
