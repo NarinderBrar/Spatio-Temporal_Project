@@ -12,6 +12,11 @@
     For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/microcircuit#/metype/L23_PC_cADpyr/details
   </notes>
     <include href="Spatio-Temporal-Cell.cell.nml"></include>
+
+    <include href="Leak.channel.nml"/>
+    <include href="k_slow.channel.nml"/>
+    <include href="k_fast.channel.nml"/>
+    <include href="ca_boyle.channel.nml"/>
     <include href="SingleCompMuscleCell.cell.nml"></include>
 
     <expTwoSynapse id="exc_syn_1conns" erev="0mV" gbase="25nS" tauDecay="10ms" tauRise="1ms"/>
@@ -35,6 +40,12 @@
           <instance id="0">
             <location y="50" x="0" z="0"/>
           </instance>
+        </population>
+
+        <population id="muscle" component="SingleCompMuscleCell" type="populationList">
+            <instance id="0">
+                <location y="0" x="50" z="0"/>
+            </instance>
         </population>
 
         <projection id="N_M" postsynapticPopulation="Pop_cADpyr" presynapticPopulation="neuron" synapse="exc_syn_1conns">
