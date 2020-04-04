@@ -38,7 +38,7 @@
         </population>
 
         <projection id="N_M" postsynapticPopulation="Pop_cADpyr" presynapticPopulation="neuron" synapse="exc_syn_1conns">
-          <connection preCellId="../neuron/0/generic_iaf_cell" postCellId="../Pop_cADpyr/0/Spatio-Temporal-Cell" id="0"/>
+          <connection preCellId="../neuron/0/generic_iaf_cell" postCellId="../Pop_cADpyr/0/L23_PC_simplified" id="0"/>
         </projection>
 
         <inputList id="hyp_input" population="Pop_cADpyr" component="constant_hyperpolarizing_current">
