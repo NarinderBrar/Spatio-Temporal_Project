@@ -19,6 +19,12 @@
 
   <iafCell id="generic_iaf_cell" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
 
+  <include href="Leak.channel.nml"/>
+  <include href="k_slow.channel.nml"/>
+  <include href="k_fast.channel.nml"/>
+  <include href="ca_boyle.channel.nml"/>
+  <include href="SingleCompMuscle.cell.nml"/>
+
   <network id="network" type="networkWithTemperature" temperature="34 degC">
 
       <population id="neuron" component="Spatio-Temporal-Cell" size="1" type="populationList">
@@ -34,6 +40,12 @@
         <instance id="0">
           <location y="10" x="0" z="0"/>
         </instance>
+      </population>
+
+      <population id="muscle" component="SingleCompMuscleCell" type="populationList">
+          <instance id="0">
+              <location y="50" x="50" z="0"/>
+          </instance>
       </population>
 
       <projection id="N_M" postsynapticPopulation="neuron" presynapticPopulation="iaf_cell" synapse="exc_syn_1conns">
