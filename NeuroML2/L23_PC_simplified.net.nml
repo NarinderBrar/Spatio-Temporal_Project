@@ -38,7 +38,7 @@ For more information on this cell model see: https://bbp.epfl.ch/nmc-portal/micr
         <inputList id="hyp_input" population="Pop_PC_simplified" component="constant_hyperpolarizing_current">
             <input id="0" target="../Pop_PC_simplified/0/L23_PC_simplified" destination="synapses"/>
         </inputList>
-        
+
         <inputList id="step_input" population="Pop_PC_simplified" component="transient_pulse_current">
             <input id="0" target="../Pop_PC_simplified/0/L23_PC_simplified" destination="synapses"/>
         </inputList>
