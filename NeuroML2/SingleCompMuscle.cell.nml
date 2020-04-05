@@ -49,6 +49,12 @@
                 <distal x="0.0" y="-45.0" z="0.0" diameter="5.0"/>
             </segment>
 
+            <segment id="5" name="axon1">
+                <parent segment="0" fractionAlong="0"/>
+                <proximal x="0.0" y="-105.0" z="0.0" diameter="5.0"/>
+                <distal x="0.0" y="-115" z="0.0" diameter="5.0"/>
+            </segment>
+
             <!--Segment Groups Single-->
 
             <segmentGroup id="SomaGrp" neuroLexId="sao864921383">
@@ -73,6 +79,11 @@
             <segmentGroup id="dend4Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="4"/>
+            </segmentGroup>
+
+            <segmentGroup id="axon1Grp" neuroLexId="sao864921383">
+                <property tag="numberInternalDivisions" value="100"/>
+                <member segment="5"/>
             </segmentGroup>
 
             <!--Segment Groups Combine-->
