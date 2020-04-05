@@ -51,7 +51,7 @@
                 <member segment="0"/>
             </segmentGroup>
 
-            <segmentGroup id="Section_1" neuroLexId="sao864921383">
+            <segmentGroup id="dend0Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
                 <member segment="1"/>
             </segmentGroup>
@@ -73,7 +73,7 @@
 
             <segmentGroup id="all">
                 <include segmentGroup="Soma"/>
-                <include segmentGroup="Section_1"/>
+                <include segmentGroup="dend0Grp"/>
                 <include segmentGroup="dend_1"/>
                 <include segmentGroup="Section_3"/>
                 <include segmentGroup="Section_axon"/>
@@ -84,7 +84,7 @@
             </segmentGroup>
 
             <segmentGroup id="dendrite_group" neuroLexId="GO:0030425">
-                <include segmentGroup="Section_1"/>
+                <include segmentGroup="dend0Grp"/>
                 <include segmentGroup="dend_1"/>
                 <include segmentGroup="Section_3"/>
             </segmentGroup>
