@@ -23,25 +23,25 @@
                 <distal x="0" y="85" z="0" diameter="20"/>
             </segment>
 
-            <segment id="1" name="dend2">
+            <segment id="1" name="dend1">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="65.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="45.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="2" name="dend_1">
+            <segment id="2" name="dend2">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="35.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="15.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="5" name="dend_3">
+            <segment id="5" name="dend3">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="5.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-15.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="6" name="axon">
+            <segment id="6" name="dend4">
                 <parent segment="0" fractionAlong="0"/>
                 <proximal x="0.0" y="-25.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-45.0" z="0.0" diameter="5.0"/>
