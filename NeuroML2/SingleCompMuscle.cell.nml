@@ -35,13 +35,13 @@
                 <distal x="0.0" y="15.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="5" name="dend3">
+            <segment id="3" name="dend3">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="5.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-15.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="6" name="axon">
+            <segment id="4" name="axon">
                 <parent segment="0" fractionAlong="0"/>
                 <proximal x="0.0" y="-25.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-45.0" z="0.0" diameter="5.0"/>
@@ -63,12 +63,12 @@
 
             <segmentGroup id="Section_3" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
-                <member segment="5"/>
+                <member segment="3"/>
             </segmentGroup>
 
             <segmentGroup id="Section_axon" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
-                <member segment="6"/>
+                <member segment="4"/>
             </segmentGroup>
 
             <segmentGroup id="all">
