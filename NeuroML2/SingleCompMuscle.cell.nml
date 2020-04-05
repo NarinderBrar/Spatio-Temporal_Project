@@ -56,17 +56,17 @@
                 <member segment="1"/>
             </segmentGroup>
 
-            <segmentGroup id="dend_1" neuroLexId="sao864921383">
+            <segmentGroup id="dend1Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
                 <member segment="2"/>
             </segmentGroup>
 
-            <segmentGroup id="Section_3" neuroLexId="sao864921383">
+            <segmentGroup id="dend2Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
                 <member segment="3"/>
             </segmentGroup>
 
-            <segmentGroup id="Section_axon" neuroLexId="sao864921383">
+            <segmentGroup id="axon1Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="4"/>
             </segmentGroup>
@@ -74,9 +74,9 @@
             <segmentGroup id="all">
                 <include segmentGroup="Soma"/>
                 <include segmentGroup="dend0Grp"/>
-                <include segmentGroup="dend_1"/>
-                <include segmentGroup="Section_3"/>
-                <include segmentGroup="Section_axon"/>
+                <include segmentGroup="dend1Grp"/>
+                <include segmentGroup="dend2Grp"/>
+                <include segmentGroup="axon1Grp"/>
             </segmentGroup>
 
             <segmentGroup id="soma_group" neuroLexId="GO:0043025">
@@ -85,12 +85,12 @@
 
             <segmentGroup id="dendrite_group" neuroLexId="GO:0030425">
                 <include segmentGroup="dend0Grp"/>
-                <include segmentGroup="dend_1"/>
-                <include segmentGroup="Section_3"/>
+                <include segmentGroup="dend1Grp"/>
+                <include segmentGroup="dend2Grp"/>
             </segmentGroup>
 
             <segmentGroup id="axon_group" neuroLexId="GO:0030424">
-                <include segmentGroup="Section_axon"/>
+                <include segmentGroup="axon1Grp"/>
             </segmentGroup>
         </morphology>
 
