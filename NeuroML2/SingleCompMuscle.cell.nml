@@ -49,11 +49,6 @@
                 <distal x="0.0" y="-45.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="5" name="axon1">
-                <parent segment="0" fractionAlong="0"/>
-                <proximal x="0.0" y="-105.0" z="0.0" diameter="5.0"/>
-                <distal x="0.0" y="-115" z="0.0" diameter="5.0"/>
-            </segment>
 
             <!--Segment Groups Single-->
 
