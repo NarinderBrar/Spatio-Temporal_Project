@@ -77,6 +77,11 @@
                 <distal x="0.0" y="-125.0" z="10.0" diameter="1.0"/>
             </segment>
 
+            <segment id="10" name="dend1C">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="0.0" y="35.0" z="0.0" diameter="2.0"/>
+                <distal x="0.0" y="45.0" z="0.0" diameter="2.0"/>
+            </segment>
 
             <segmentGroup id="Soma" neuroLexId="sao864921383">
                 <member segment="0"/>
@@ -85,6 +90,7 @@
             <segmentGroup id="dend0Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
                 <member segment="1"/>
+                <member segment="10"/>
             </segmentGroup>
 
             <segmentGroup id="dend1Grp" neuroLexId="sao864921383">
