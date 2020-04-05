@@ -61,15 +61,22 @@
 
             <segment id="7" name="axon1">
                 <parent segment="0" fractionAlong="0"/>
-                <proximal x="0.0" y="-25.0" z="0.0" diameter="5.0"/>
-                <distal x="0.0" y="-45.0" z="0.0" diameter="5.0"/>
+                <proximal x="0.0" y="-105.0" z="0.0" diameter="2.0"/>
+                <distal x="0.0" y="-115.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segment id="8" name="axon2">
+            <segment id="8" name="axon2R">
                 <parent segment="0" fractionAlong="0"/>
-                <proximal x="0.0" y="-55.0" z="0.0" diameter="5.0"/>
-                <distal x="0.0" y="-75.0" z="0.0" diameter="5.0"/>
+                <proximal x="0.0" y="-115.0" z="0.0" diameter="1.0"/>
+                <distal x="0.0" y="-125.0" z="-10.0" diameter="1.0"/>
             </segment>
+
+            <segment id="9" name="axon2L">
+                <parent segment="0" fractionAlong="0"/>
+                <proximal x="0.0" y="-115.0" z="0.0" diameter="1.0"/>
+                <distal x="0.0" y="-125.0" z="10.0" diameter="1.0"/>
+            </segment>
+
 
             <segmentGroup id="Soma" neuroLexId="sao864921383">
                 <member segment="0"/>
@@ -110,9 +117,14 @@
                 <member segment="7"/>
             </segmentGroup>
 
-            <segmentGroup id="axon2Grp" neuroLexId="sao864921383">
+            <segmentGroup id="axon2RGrp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="8"/>
+            </segmentGroup>
+
+            <segmentGroup id="axon2LGrp" neuroLexId="sao864921383">
+                <property tag="numberInternalDivisions" value="100"/>
+                <member segment="9"/>
             </segmentGroup>
 
             <segmentGroup id="all">
@@ -124,7 +136,8 @@
                 <include segmentGroup="dend4Grp"/>
                 <include segmentGroup="dend5Grp"/>                
                 <include segmentGroup="axon1Grp"/>
-                <include segmentGroup="axon2Grp"/>
+                <include segmentGroup="axon2RGrp"/>
+                <include segmentGroup="axon2LGrp"/>
             </segmentGroup>
 
             <segmentGroup id="soma_group" neuroLexId="GO:0043025">
@@ -142,7 +155,8 @@
 
             <segmentGroup id="axon_group" neuroLexId="GO:0030424">
                 <include segmentGroup="axon1Grp"/>
-                <include segmentGroup="axon2Grp"/>
+                <include segmentGroup="axon2RGrp"/>
+                <include segmentGroup="axon2LGrp"/>
             </segmentGroup>
         </morphology>
 
