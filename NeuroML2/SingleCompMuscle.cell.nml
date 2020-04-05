@@ -81,11 +81,6 @@
                 <member segment="4"/>
             </segmentGroup>
 
-            <segmentGroup id="axon1Grp" neuroLexId="sao864921383">
-                <property tag="numberInternalDivisions" value="100"/>
-                <member segment="5"/>
-            </segmentGroup>
-
             <!--Segment Groups Combine-->
 
             <segmentGroup id="all">
