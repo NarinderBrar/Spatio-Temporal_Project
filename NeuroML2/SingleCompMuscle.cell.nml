@@ -18,6 +18,8 @@
 
         <morphology id="morphology_SingleCompMuscleCell">
 
+            <!--Segments-->
+
             <segment id ="0" name="Soma">
                 <proximal x="0" y="65" z="0" diameter="20"/>
                 <distal x="0" y="85" z="0" diameter="20"/>
@@ -35,48 +37,52 @@
                 <distal x="0.0" y="15.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="5" name="dend3">
+            <segment id="3" name="dend3">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="5.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-15.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="6" name="dend4">
+            <segment id="4" name="dend4">
                 <parent segment="0" fractionAlong="0"/>
                 <proximal x="0.0" y="-25.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-45.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segmentGroup id="Soma" neuroLexId="sao864921383">
+            <!--Segment Groups Single-->
+
+            <segmentGroup id="SomaGrp" neuroLexId="sao864921383">
                 <member segment="0"/>
             </segmentGroup>
 
-            <segmentGroup id="Section_1" neuroLexId="sao864921383">
+            <segmentGroup id="dend1Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
                 <member segment="1"/>
             </segmentGroup>
 
-            <segmentGroup id="dend_1" neuroLexId="sao864921383">
+            <segmentGroup id="dend2Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
                 <member segment="2"/>
             </segmentGroup>
 
-            <segmentGroup id="Section_3" neuroLexId="sao864921383">
+            <segmentGroup id="dend3Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
-                <member segment="5"/>
+                <member segment="3"/>
             </segmentGroup>
 
-            <segmentGroup id="Section_axon" neuroLexId="sao864921383">
+            <segmentGroup id="dend4Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
-                <member segment="6"/>
+                <member segment="4"/>
             </segmentGroup>
+
+            <!--Segment Groups Combine-->
 
             <segmentGroup id="all">
                 <include segmentGroup="Soma"/>
-                <include segmentGroup="Section_1"/>
-                <include segmentGroup="dend_1"/>
-                <include segmentGroup="Section_3"/>
-                <include segmentGroup="Section_axon"/>
+                <include segmentGroup="dend1Grp"/>
+                <include segmentGroup="dend2Grp"/>
+                <include segmentGroup="dend3Grp"/>
+                <include segmentGroup="dend4Grp"/>
             </segmentGroup>
 
             <segmentGroup id="soma_group" neuroLexId="GO:0043025">
@@ -84,13 +90,14 @@
             </segmentGroup>
 
             <segmentGroup id="dendrite_group" neuroLexId="GO:0030425">
-                <include segmentGroup="Section_1"/>
-                <include segmentGroup="dend_1"/>
-                <include segmentGroup="Section_3"/>
+                <include segmentGroup="dend1Grp"/>
+                <include segmentGroup="dend2Grp"/>
+                <include segmentGroup="dend3Grp"/>
+                
             </segmentGroup>
 
             <segmentGroup id="axon_group" neuroLexId="GO:0030424">
-                <include segmentGroup="Section_axon"/>
+                <include segmentGroup="dend4Grp"/>
             </segmentGroup>
         </morphology>
 
