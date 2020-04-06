@@ -157,8 +157,8 @@
           </instance>
       </population>
 
-      <projection id="N_M" postsynapticPopulation="vPop_Sensor" presynapticPopulation="iafPop_Motor" synapse="exc_syn_1conns">
-        <connection preCellId="../iafPop_Motor/0/iafNeuron_Sensor" postCellId="../vPop_Sensor/0/vNeuron_Sensor" id="0"/>
+      <projection id="N_M" postsynapticPopulation="iafPop_Motor" presynapticPopulation="iafPop_Sensor" synapse="exc_syn_1conns">
+        <connection preCellId="../iafPop_Sensor/0/iafNeuron_Sensor" postCellId="../iafPop_Motor/0/iafNeuron_Sensor" id="0"/>
       </projection>
 
       <inputList id="hyp_input" population="vPop_Sensor" component="constant_hyperpolarizing_current">
