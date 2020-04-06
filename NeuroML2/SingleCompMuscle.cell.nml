@@ -211,6 +211,42 @@
                 <distal x="-30.0" y="25.0" z="0.0" diameter="0.5"/>
             </segment>
 
+            <segment id="35" name="dend2L">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="0.0" y="75.0" z="10.0" diameter="1.0"/>
+                <distal x="0.0" y="75.0" z="40.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="351" name="dend2LU">
+                <parent segment="35" fractionAlong="1"/>
+                <proximal x="0.0" y="75.0" z="40.0" diameter="1.0"/>
+                <distal x="0.0" y="95.0" z="60.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="352" name="dend2LD">
+                <parent segment="35" fractionAlong="1"/>
+                <proximal x="0.0" y="75.0" z="40.0" diameter="1.0"/>
+                <distal x="0.0" y="55.0" z="60.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="36" name="dend2R">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="0.0" y="75.0" z="-10.0" diameter="1.0"/>
+                <distal x="0.0" y="75.0" z="-40.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="361" name="dend2RU">
+                <parent segment="36" fractionAlong="1"/>
+                <proximal x="0.0" y="75.0" z="-40.0" diameter="1.0"/>
+                <distal x="0.0" y="95.0" z="-60.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="362" name="dend2RD">
+                <parent segment="36" fractionAlong="1"/>
+                <proximal x="0.0" y="75.0" z="-40.0" diameter="1.0"/>
+                <distal x="0.0" y="55.0" z="-60.0" diameter="1.0"/>
+            </segment>
+
             <segmentGroup id="Soma" neuroLexId="sao864921383">
                 <member segment="0"/>
             </segmentGroup>
@@ -297,6 +333,20 @@
                 <member segment="34"/>
                 <member segment="341"/>
                 <member segment="342"/>
+            </segmentGroup>
+
+            <segmentGroup id="dend2RDGrp" neuroLexId="sao864921383">
+                <property tag="numberInternalDivisions" value="100"/>
+                <member segment="35"/>
+                <member segment="351"/>
+                <member segment="352"/>
+            </segmentGroup>
+
+            <segmentGroup id="dend2DGrp" neuroLexId="sao864921383">
+                <property tag="numberInternalDivisions" value="100"/>
+                <member segment="36"/>
+                <member segment="361"/>
+                <member segment="362"/>
             </segmentGroup>
 
             <segmentGroup id="all">
