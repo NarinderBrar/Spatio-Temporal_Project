@@ -90,6 +90,16 @@
                 <proximal x="-5.0" y="25.0" z="0.0" diameter="1.0"/>
                 <distal x="-15.0" y="35.0" z="0.0" diameter="1.0"/>
             </segment>
+            <segment id="521" name="dend52L">
+                <parent segment="52" fractionAlong="1"/>
+                <proximal x="-15.0" y="35.0" z="0.0" diameter="0.5"/>
+                <distal x="-20.0" y="40.0" z="-10.0" diameter="0.5"/>
+            </segment>
+            <segment id="522" name="dend52R">
+                <parent segment="52" fractionAlong="1"/>
+                <proximal x="-15.0" y="35.0" z="0.0" diameter="0.5"/>
+                <distal x="-20.0" y="40.0" z="10.0" diameter="0.5"/>
+            </segment>
 
             <segment id="53" name="dend53">
                 <parent segment="0" fractionAlong="1"/>
@@ -98,13 +108,13 @@
             </segment>
             <segment id="531" name="dend53L">
                 <parent segment="53" fractionAlong="1"/>
-                <proximal x="15.0" y="35.0" z="0.0" diameter="1.0"/>
-                <distal x="20.0" y="40.0" z="-10.0" diameter="1.0"/>
+                <proximal x="15.0" y="35.0" z="0.0" diameter="0.5"/>
+                <distal x="20.0" y="40.0" z="-10.0" diameter="0.5"/>
             </segment>
             <segment id="532" name="dend53R">
                 <parent segment="53" fractionAlong="1"/>
-                <proximal x="15.0" y="35.0" z="0.0" diameter="1.0"/>
-                <distal x="20.0" y="40.0" z="10.0" diameter="1.0"/>
+                <proximal x="15.0" y="35.0" z="0.0" diameter="0.5"/>
+                <distal x="20.0" y="40.0" z="10.0" diameter="0.5"/>
             </segment>
 
 
@@ -159,6 +169,8 @@
             <segmentGroup id="dend52Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="52"/>
+                <member segment="521"/>
+                <member segment="522"/>
             </segmentGroup>
 
             <segmentGroup id="dend53Grp" neuroLexId="sao864921383">
