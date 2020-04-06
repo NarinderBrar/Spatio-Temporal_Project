@@ -204,6 +204,8 @@
             <segmentGroup id="axon2LGrp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="24"/>
+                <member segment="27"/>
+                <member segment="28"/>
             </segmentGroup>
 
             <segmentGroup id="all">
