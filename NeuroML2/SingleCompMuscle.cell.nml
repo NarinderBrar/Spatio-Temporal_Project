@@ -59,23 +59,6 @@
                 <distal x="0.0" y="-95.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="7" name="axon1">
-                <parent segment="0" fractionAlong="0"/>
-                <proximal x="0.0" y="-115.0" z="0.0" diameter="2.0"/>
-                <distal x="0.0" y="-105.0" z="0.0" diameter="2.0"/>
-            </segment>
-
-            <segment id="8" name="axon2R">
-                <parent segment="0" fractionAlong="0"/>
-                <proximal x="0.0" y="-125.0" z="0.0" diameter="1.0"/>
-                <distal x="0.0" y="-115.0" z="-10.0" diameter="1.0"/>
-            </segment>
-
-            <segment id="9" name="axon2L">
-                <parent segment="0" fractionAlong="0"/>
-                <proximal x="0.0" y="-125.0" z="0.0" diameter="1.0"/>
-                <distal x="0.0" y="-115.0" z="10.0" diameter="1.0"/>
-            </segment>
 
             <segment id="11" name="dend1C">
                 <parent segment="0" fractionAlong="1"/>
@@ -111,6 +94,30 @@
                 <parent segment="5" fractionAlong="1"/>
                 <proximal x="0.0" y="-95.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="-85.0" z="0.0" diameter="2.0"/>
+            </segment>
+
+            <segment id="21" name="axon1R">
+                <parent segment="16" fractionAlong="0"/>
+                <proximal x="0.0" y="-125.0" z="-10.0" diameter="1.0"/>
+                <distal x="0.0" y="-115.0" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="22" name="axon1L">
+                <parent segment="16" fractionAlong="0"/>
+                <proximal x="0.0" y="-125.0" z="10.0" diameter="1.0"/>
+                <distal x="0.0" y="-115.0" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="23" name="axon2R">
+                <parent segment="16" fractionAlong="0"/>
+                <proximal x="-20.0" y="-110.0" z="0.0" diameter="2.0"/>
+                <distal x="0.0" y="-100.0" z="0.0" diameter="2.0"/>
+            </segment>
+
+            <segment id="24" name="axon2L">
+                <parent segment="16" fractionAlong="0"/>
+                <proximal x="20.0" y="-110.0" z="0.0" diameter="2.0"/>
+                <distal x="0.0" y="-100.0" z="0.0" diameter="2.0"/>
             </segment>
 
             <segmentGroup id="Soma" neuroLexId="sao864921383">
