@@ -31,8 +31,8 @@
 
             <segment id="2" name="axon2">
                 <parent segment="12" fractionAlong="1"/>
-                <proximal x="0.0" y="-15.0" z="0.0" diameter="5.0"/>
-                <distal x="0.0" y="-25.0" z="0.0" diameter="5.0"/>
+                <proximal x="0.0" y="-10.0" z="0.0" diameter="5.0"/>
+                <distal x="0.0" y="-20.0" z="0.0" diameter="5.0"/>
             </segment>
 
             <segment id="11" name="axon1C">
@@ -44,10 +44,22 @@
             <segment id="12" name="axon2C">
                 <parent segment="11" fractionAlong="0"/>
                 <proximal x="0.0" y="-5.0" z="0.0" diameter="1.0"/>
-                <distal x="0.0" y="-15.0" z="0.0" diameter="1.0"/>
+                <distal x="0.0" y="-10.0" z="0.0" diameter="1.0"/>
             </segment>
 
-            <segment id="31" name="dend1RT">
+            <segment id="31" name="axon4">
+                <parent segment="12" fractionAlong="1"/>
+                <proximal x="0.0" y="-20.0" z="0.0" diameter="1.0"/>
+                <distal x="20.0" y="-35.0" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="41" name="axon5">
+                <parent segment="12" fractionAlong="1"/>
+                <proximal x="0.0" y="-20.0" z="0.0" diameter="1.0"/>
+                <distal x="-20.0" y="-35.0" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="51" name="dend1RT">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="30.0" z="0.0" diameter="1.0"/>
                 <distal x="0.0" y="40.0" z="0.0" diameter="1.0"/>
@@ -69,15 +81,27 @@
                 <member segment="12"/>
             </segmentGroup>
 
+            <segmentGroup id="axon4Grp" neuroLexId="sao864921383">
+                <property tag="numberInternalDivisions" value="10"/>
+                <member segment="31"/>
+            </segmentGroup>
+
+             <segmentGroup id="axon5Grp" neuroLexId="sao864921383">
+                <property tag="numberInternalDivisions" value="10"/>
+                <member segment="41"/>
+            </segmentGroup>
+
             <segmentGroup id="dend1RTGrp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
-                <member segment="31"/>
+                <member segment="51"/>
             </segmentGroup>
 
             <segmentGroup id="all">
                 <include segmentGroup="Soma"/>
                 <include segmentGroup="axon0Grp"/>
                 <include segmentGroup="axon1Grp"/>
+                <include segmentGroup="axon4Grp"/>
+                <include segmentGroup="axon5Grp"/>                
             </segmentGroup>
 
             <segmentGroup id="soma_group" neuroLexId="GO:0043025">
@@ -91,6 +115,8 @@
             <segmentGroup id="axon_group" neuroLexId="GO:0030424">
                 <include segmentGroup="axon0Grp"/>
                 <include segmentGroup="axon1Grp"/>
+                <include segmentGroup="axon4Grp"/>
+                <include segmentGroup="axon5Grp"/> 
             </segmentGroup>
         </morphology>
 
