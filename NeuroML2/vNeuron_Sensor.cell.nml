@@ -123,11 +123,31 @@
                 <proximal x="0.0" y="25.0" z="5.0" diameter="1.0"/>
                 <distal x="0.0" y="35.0" z="15.0" diameter="1.0"/>
             </segment>
+            <segment id="541" name="dend54L">
+                <parent segment="53" fractionAlong="1"/>
+                <proximal x="0.0" y="35.0" z="15.0" diameter="0.5"/>
+                <distal x="-10.0" y="40.0" z="20.0" diameter="0.5"/>
+            </segment>
+            <segment id="542" name="dend54R">
+                <parent segment="53" fractionAlong="1"/>
+                <proximal x="0.0" y="35.0" z="15.0" diameter="0.5"/>
+                <distal x="10.0" y="40.0" z="20.0" diameter="0.5"/>
+            </segment>
 
             <segment id="55" name="dend55">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="25.0" z="-5.0" diameter="1.0"/>
                 <distal x="0.0" y="35.0" z="-15.0" diameter="1.0"/>
+            </segment>
+            <segment id="551" name="dend55L">
+                <parent segment="53" fractionAlong="1"/>
+                <proximal x="0.0" y="35.0" z="-15.0" diameter="0.5"/>
+                <distal x="-10.0" y="40.0" z="-20.0" diameter="0.5"/>
+            </segment>
+            <segment id="552" name="dend55R">
+                <parent segment="53" fractionAlong="1"/>
+                <proximal x="0.0" y="35.0" z="-15.0" diameter="0.5"/>
+                <distal x="10.0" y="40.0" z="-20.0" diameter="0.5"/>
             </segment>
 
 
@@ -164,6 +184,8 @@
             <segmentGroup id="dend51Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="51"/>
+                <member segment="511"/>
+                <member segment="512"/>
             </segmentGroup>
 
             <segmentGroup id="dend52Grp" neuroLexId="sao864921383">
@@ -182,12 +204,16 @@
 
             <segmentGroup id="dend54Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
-                <member segment="54"/>
+                <member segment="541"/>
+                <member segment="541"/>
+                <member segment="542"/>
             </segmentGroup>
 
             <segmentGroup id="dend55Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="55"/>
+                <member segment="551"/>
+                <member segment="552"/>
             </segmentGroup>
 
             <segmentGroup id="all">
