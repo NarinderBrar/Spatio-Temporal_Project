@@ -216,11 +216,31 @@
                 <proximal x="0.0" y="75.0" z="10.0" diameter="1.0"/>
                 <distal x="0.0" y="75.0" z="40.0" diameter="1.0"/>
             </segment>
+            <segment id="351" name="dend2LL">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="0.0" y="75.0" z="40.0" diameter="0.5"/>
+                <distal x="0.0" y="95.0" z="60.0" diameter="0.5"/>
+            </segment>
+            <segment id="352" name="dend2LR">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="0.0" y="75.0" z="40.0" diameter="0.5"/>
+                <distal x="0.0" y="55.0" z="60.0" diameter="0.5"/>
+            </segment>
 
             <segment id="36" name="dend2R">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="75.0" z="-10.0" diameter="1.0"/>
                 <distal x="0.0" y="75.0" z="-40.0" diameter="1.0"/>
+            </segment>
+            <segment id="361" name="dend2RL">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="0.0" y="75.0" z="-40.0" diameter="0.5"/>
+                <distal x="0.0" y="95.0" z="-60.0" diameter="0.5"/>
+            </segment>
+            <segment id="362" name="dend2RR">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="0.0" y="75.0" z="-40.0" diameter="0.5"/>
+                <distal x="0.0" y="55.0" z="-60.0" diameter="0.5"/>
             </segment>
 
             <segmentGroup id="Soma" neuroLexId="sao864921383">
@@ -314,11 +334,15 @@
             <segmentGroup id="dend2RDGrp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="35"/>
+                <member segment="351"/>
+                <member segment="352"/>
             </segmentGroup>
 
             <segmentGroup id="dend2LDGrp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="36"/>
+                <member segment="361"/>
+                <member segment="362"/>
             </segmentGroup>
 
             <segmentGroup id="all">
