@@ -84,6 +84,16 @@
                 <proximal x="0.0" y="30.0" z="0.0" diameter="1.0"/>
                 <distal x="0.0" y="40.0" z="0.0" diameter="1.0"/>
             </segment>
+            <segment id="511" name="dend51L">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="0.0" y="40.0" z="0.0" diameter="1.0"/>
+                <distal x="50.0" y="10.0" z="0.0" diameter="0.5"/>
+            </segment>
+            <segment id="512" name="dend51R">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="0.0" y="40.0" z="0.0" diameter="1.0"/>
+                <distal x="50.0" y="-10.0" z="0.0" diameter="0.5"/>
+            </segment>
 
             <segment id="52" name="dend52">
                 <parent segment="0" fractionAlong="1"/>
@@ -184,6 +194,8 @@
             <segmentGroup id="dend51Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="51"/>
+                <member segment="511"/>
+                <member segment="512"/>
             </segmentGroup>
 
             <segmentGroup id="dend52Grp" neuroLexId="sao864921383">
@@ -202,7 +214,7 @@
 
             <segmentGroup id="dend54Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
-                <member segment="541"/>
+                <member segment="54"/>
                 <member segment="541"/>
                 <member segment="542"/>
             </segmentGroup>
