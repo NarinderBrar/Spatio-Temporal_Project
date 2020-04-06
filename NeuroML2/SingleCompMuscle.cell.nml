@@ -217,34 +217,10 @@
                 <distal x="0.0" y="75.0" z="40.0" diameter="1.0"/>
             </segment>
 
-            <segment id="351" name="dend2LU">
-                <parent segment="35" fractionAlong="1"/>
-                <proximal x="0.0" y="75.0" z="40.0" diameter="1.0"/>
-                <distal x="0.0" y="95.0" z="60.0" diameter="1.0"/>
-            </segment>
-
-            <segment id="352" name="dend2LD">
-                <parent segment="35" fractionAlong="1"/>
-                <proximal x="0.0" y="75.0" z="40.0" diameter="1.0"/>
-                <distal x="0.0" y="55.0" z="60.0" diameter="1.0"/>
-            </segment>
-
             <segment id="36" name="dend2R">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="75.0" z="-10.0" diameter="1.0"/>
                 <distal x="0.0" y="75.0" z="-40.0" diameter="1.0"/>
-            </segment>
-
-            <segment id="361" name="dend2RU">
-                <parent segment="36" fractionAlong="1"/>
-                <proximal x="0.0" y="75.0" z="-40.0" diameter="1.0"/>
-                <distal x="0.0" y="95.0" z="-60.0" diameter="1.0"/>
-            </segment>
-
-            <segment id="362" name="dend2RD">
-                <parent segment="36" fractionAlong="1"/>
-                <proximal x="0.0" y="75.0" z="-40.0" diameter="1.0"/>
-                <distal x="0.0" y="55.0" z="-60.0" diameter="1.0"/>
             </segment-->
 
             <segmentGroup id="Soma" neuroLexId="sao864921383">
@@ -335,20 +311,6 @@
                 <member segment="342"/>
             </segmentGroup>
 
-            <!--segmentGroup id="dend2RGrp" neuroLexId="sao864921383">
-                <property tag="numberInternalDivisions" value="100"/>
-                <member segment="35"/>
-                <member segment="351"/>
-                <member segment="352"/>
-            </segmentGroup>
-
-            <segmentGroup id="dend2LGrp" neuroLexId="sao864921383">
-                <property tag="numberInternalDivisions" value="100"/>
-                <member segment="36"/>
-                <member segment="361"/>
-                <member segment="362"/>
-            </segmentGroup-->
-
             <segmentGroup id="all">
                 <include segmentGroup="Soma"/>
                 <include segmentGroup="axon0Grp"/>
@@ -357,15 +319,10 @@
                 <include segmentGroup="axon3Grp"/>
                 <include segmentGroup="axon4Grp"/>
                 <include segmentGroup="axon5Grp"/>                
+
                 <include segmentGroup="axon7Grp"/>
                 <include segmentGroup="axon8RGrp"/>
                 <include segmentGroup="axon8LGrp"/>
-                <!--include segmentGroup="dend1RTGrp"/>
-                <include segmentGroup="dend1LTGrp"/>
-                <include segmentGroup="dend1RDGrp"/>
-                <include segmentGroup="dend1LDGrp"/>
-                <include segmentGroup="dend2RGrp"/>
-                <include segmentGroup="dend2LGrp"/-->
             </segmentGroup>
 
             <segmentGroup id="soma_group" neuroLexId="GO:0043025">
@@ -377,8 +334,6 @@
                 <include segmentGroup="dend1LTGrp"/>
                 <include segmentGroup="dend1RDGrp"/>
                 <include segmentGroup="dend1LDGrp"/>
-                <!--include segmentGroup="dend2RGrp"/>
-                <include segmentGroup="dend2LGrp"/-->
             </segmentGroup>
 
             <segmentGroup id="axon_group" neuroLexId="GO:0030424">
