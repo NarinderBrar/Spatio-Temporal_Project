@@ -97,12 +97,12 @@
                 <distal x="15.0" y="35.0" z="0.0" diameter="1.0"/>
             </segment>
             <segment id="531" name="dend53L">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="53" fractionAlong="1"/>
                 <proximal x="15.0" y="35.0" z="0.0" diameter="1.0"/>
                 <distal x="20.0" y="40.0" z="-10.0" diameter="1.0"/>
             </segment>
             <segment id="532" name="dend53R">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="53" fractionAlong="1"/>
                 <proximal x="15.0" y="35.0" z="0.0" diameter="1.0"/>
                 <distal x="20.0" y="40.0" z="10.0" diameter="1.0"/>
             </segment>
