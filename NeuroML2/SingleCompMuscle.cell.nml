@@ -120,6 +120,30 @@
                 <distal x="0.0" y="-100.0" z="0.0" diameter="2.0"/>
             </segment>
 
+            <segment id="25" name="axon2RCR">
+                <parent segment="25" fractionAlong="0"/>
+                <proximal x="-30.0" y="-110.0" z="10.0" diameter="2.0"/>
+                <distal x="-20.0" y="-110.0" z="0.0" diameter="2.0"/>
+            </segment>
+
+            <segment id="26" name="axon2RCL">
+                <parent segment="25" fractionAlong="0"/>
+                <proximal x="-30.0" y="-110.0" z="-10.0" diameter="2.0"/>
+                <distal x="-20.0" y="-110.0" z="0.0" diameter="2.0"/>
+            </segment>
+
+            <segment id="27" name="axon2LCR">
+                <parent segment="26" fractionAlong="0"/>
+                <proximal x="30.0" y="-110.0" z="10.0" diameter="2.0"/>
+                <distal x="20.0" y="-110.0" z="0.0" diameter="2.0"/>
+            </segment>
+
+            <segment id="28" name="axon2LCL">
+                <parent segment="26" fractionAlong="0"/>
+                <proximal x="30.0" y="-110.0" z="-10.0" diameter="2.0"/>
+                <distal x="20.0" y="-110.0" z="0.0" diameter="2.0"/>
+            </segment>
+
             <segmentGroup id="Soma" neuroLexId="sao864921383">
                 <member segment="0"/>
             </segmentGroup>
@@ -173,6 +197,8 @@
             <segmentGroup id="axon2RGrp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="23"/>
+                <member segment="25"/>
+                <member segment="26"/>
             </segmentGroup>
 
             <segmentGroup id="axon2LGrp" neuroLexId="sao864921383">
