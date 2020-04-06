@@ -24,37 +24,37 @@
             </segment>
 
             <segment id="1" name="dend1">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="11" fractionAlong="1"/>
                 <proximal x="0.0" y="35.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="55.0" z="0.0" diameter="5.0"/>
             </segment>
 
             <segment id="2" name="dend2">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="12" fractionAlong="1"/>
                 <proximal x="0.0" y="5.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="25.0" z="0.0" diameter="5.0"/>
             </segment>
 
             <segment id="3" name="dend3">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="13" fractionAlong="1"/>
                 <proximal x="0.0" y="-25.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-5.0" z="0.0" diameter="5.0"/>
             </segment>
 
             <segment id="4" name="dend4">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="14" fractionAlong="1"/>
                 <proximal x="0.0" y="-55.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-35.0" z="0.0" diameter="5.0"/>
             </segment>
 
             <segment id="5" name="dend5">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="15" fractionAlong="1"/>
                 <proximal x="0.0" y="-85.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-65.0" z="0.0" diameter="5.0"/>
             </segment>
 
             <segment id="6" name="dend6">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="16" fractionAlong="1"/>
                 <proximal x="0.0" y="-115.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-95.0" z="0.0" diameter="5.0"/>
             </segment>
@@ -84,31 +84,31 @@
             </segment>
 
             <segment id="12" name="dend2C">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="1" fractionAlong="1"/>
                 <proximal x="0.0" y="25.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="35.0" z="0.0" diameter="2.0"/>
             </segment>
 
             <segment id="13" name="dend3C">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="2" fractionAlong="1"/>
                 <proximal x="0.0" y="-5.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="5.0" z="0.0" diameter="2.0"/>
             </segment>
 
             <segment id="14" name="dend4C">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="3" fractionAlong="1"/>
                 <proximal x="0.0" y="-35.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="-25.0" z="0.0" diameter="2.0"/>
             </segment>
 
             <segment id="15" name="dend5C">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="4" fractionAlong="1"/>
                 <proximal x="0.0" y="-65.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="-55.0" z="0.0" diameter="2.0"/>
             </segment>
 
             <segment id="16" name="dend6C">
-                <parent segment="0" fractionAlong="1"/>
+                <parent segment="5" fractionAlong="1"/>
                 <proximal x="0.0" y="-95.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="-85.0" z="0.0" diameter="2.0"/>
             </segment>
