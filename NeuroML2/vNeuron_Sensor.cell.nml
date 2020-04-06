@@ -184,8 +184,6 @@
             <segmentGroup id="dend51Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="51"/>
-                <member segment="511"/>
-                <member segment="512"/>
             </segmentGroup>
 
             <segmentGroup id="dend52Grp" neuroLexId="sao864921383">
