@@ -17,7 +17,7 @@
   <pulseGenerator id="constant_hyperpolarizing_current" delay="0ms" duration="20s" amplitude="-70pA"/>
   <pulseGenerator id="transient_pulse_current" delay="700ms" duration="2000ms" amplitude="180pA"/>
 
-  <iafCell id="generic_iaf_cell" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
+  <iafCell id="iafNeuron_Sensor" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
 
   <include href="Leak.channel.nml"/>
   <include href="k_slow.channel.nml"/>
@@ -80,7 +80,7 @@
 
       </population>
 
-      <population id="iaf_cell" component="generic_iaf_cell" size="3" type="populationList">
+      <population id="iafPop_Motor" component="iafNeuron_Sensor" size="3" type="populationList">
         <property tag="color" value="1 0 .4"/>
           <instance id="0">
               <location x="20" y="45" z="10"/>
@@ -105,8 +105,8 @@
           </instance>
       </population>
 
-      <projection id="N_M" postsynapticPopulation="vPop_Sensor" presynapticPopulation="iaf_cell" synapse="exc_syn_1conns">
-        <connection preCellId="../iaf_cell/0/generic_iaf_cell" postCellId="../vPop_Sensor/0/vNeuron_Sensor" id="0"/>
+      <projection id="N_M" postsynapticPopulation="vPop_Sensor" presynapticPopulation="iafPop_Motor" synapse="exc_syn_1conns">
+        <connection preCellId="../iafPop_Motor/0/iafNeuron_Sensor" postCellId="../vPop_Sensor/0/vNeuron_Sensor" id="0"/>
       </projection>
 
       <inputList id="hyp_input" population="vPop_Sensor" component="constant_hyperpolarizing_current">
