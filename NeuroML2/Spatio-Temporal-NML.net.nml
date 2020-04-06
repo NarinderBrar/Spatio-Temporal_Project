@@ -20,15 +20,14 @@
   <iafCell id="iafNeuron_Sensor" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
   <iafCell id="iafNeuron_Motor" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
 
-  <include href="Leak.channel.nml"/>
+  <!--include href="Leak.channel.nml"/>
   <include href="k_slow.channel.nml"/>
   <include href="k_fast.channel.nml"/>
-  <include href="ca_boyle.channel.nml"/>
+  <include href="ca_boyle.channel.nml"/-->
 
   <include href="vNeuron_Motor.cell.nml"/>
 
   <network id="network" type="networkWithTemperature" temperature="34 degC">
-
       <population id="iafPop_Sensor" component="iafNeuron_Sensor" size="15" type="populationList">
         <property tag="color" value="0.4 0.0 0.0"/>
           <instance id="0">
@@ -199,6 +198,7 @@
         <connection preCellId="../iafPop_Motor/1/iafNeuron_Motor" postCellId="../vPop_Motor/1/vNeuron_Motor" id="1"/>
         <connection preCellId="../iafPop_Motor/2/iafNeuron_Motor" postCellId="../vPop_Motor/2/vNeuron_Motor" id="2"/>       
       </projection>
+
       <inputList id="hyp_input" population="vPop_Sensor" component="constant_hyperpolarizing_current">
           <input id="0" target="../vPop_Sensor/0/vNeuron_Sensor" destination="synapses"/>
       </inputList>
