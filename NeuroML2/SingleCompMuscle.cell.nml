@@ -344,7 +344,6 @@
                 <include segmentGroup="dend1LTGrp"/>
                 <include segmentGroup="dend1RDGrp"/>
                 <include segmentGroup="dend1LDGrp"/>
-
                 <include segmentGroup="dend2RDGrp"/>
                 <include segmentGroup="dend2LDGrp"/>
             </segmentGroup>
