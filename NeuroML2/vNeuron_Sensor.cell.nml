@@ -79,11 +79,36 @@
                 <distal x="-30.0" y="-45.0" z="0.0" diameter="1.0"/>
             </segment>
 
-            <segment id="51" name="dend1RT">
+            <segment id="51" name="dend51">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="30.0" z="0.0" diameter="1.0"/>
                 <distal x="0.0" y="40.0" z="0.0" diameter="1.0"/>
             </segment>
+
+            <segment id="52" name="dend52">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="-5.0" y="25.0" z="0.0" diameter="1.0"/>
+                <distal x="-15.0" y="35.0" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="53" name="dend53">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="5.0" y="25.0" z="0.0" diameter="1.0"/>
+                <distal x="15.0" y="35.0" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="54" name="dend54">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="0.0" y="25.0" z="5.0" diameter="1.0"/>
+                <distal x="0.0" y="35.0" z="15.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="55" name="dend55">
+                <parent segment="0" fractionAlong="1"/>
+                <proximal x="0.0" y="25.0" z="-5.0" diameter="1.0"/>
+                <distal x="0.0" y="35.0" z="-15.0" diameter="1.0"/>
+            </segment>
+
 
             <segmentGroup id="Soma" neuroLexId="sao864921383">
                 <member segment="0"/>
@@ -115,9 +140,29 @@
                 <member segment="412"/>
             </segmentGroup>
 
-            <segmentGroup id="dend1RTGrp" neuroLexId="sao864921383">
+            <segmentGroup id="dend51Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="51"/>
+            </segmentGroup>
+
+            <segmentGroup id="dend52Grp" neuroLexId="sao864921383">
+                <property tag="numberInternalDivisions" value="100"/>
+                <member segment="52"/>
+            </segmentGroup>
+
+            <segmentGroup id="dend53Grp" neuroLexId="sao864921383">
+                <property tag="numberInternalDivisions" value="100"/>
+                <member segment="53"/>
+            </segmentGroup>
+
+            <segmentGroup id="dend54Grp" neuroLexId="sao864921383">
+                <property tag="numberInternalDivisions" value="100"/>
+                <member segment="54"/>
+            </segmentGroup>
+
+            <segmentGroup id="dend55Grp" neuroLexId="sao864921383">
+                <property tag="numberInternalDivisions" value="100"/>
+                <member segment="55"/>
             </segmentGroup>
 
             <segmentGroup id="all">
@@ -133,7 +178,11 @@
             </segmentGroup>
 
             <segmentGroup id="dendrite_group" neuroLexId="GO:0030425">
-                <include segmentGroup="dend1RTGrp"/>
+                <include segmentGroup="dend51Grp"/>
+                <include segmentGroup="dend52Grp"/>
+                <include segmentGroup="dend53Grp"/>
+                <include segmentGroup="dend54Grp"/>
+                <include segmentGroup="dend55Grp"/>
             </segmentGroup>
 
             <segmentGroup id="axon_group" neuroLexId="GO:0030424">
