@@ -28,7 +28,7 @@
 
   <network id="network" type="networkWithTemperature" temperature="34 degC">
 
-      <population id="vPop_Sensor" component="vNeuron_Sensor" size="1" type="populationList">
+      <population id="vPop_Sensor" component="vNeuron_Sensor" type="populationList">
           <property tag="region" value="L23"/>
           <property tag="color" value="0.6 0 0"/>
           <instance id="0">
@@ -43,7 +43,7 @@
           <instance id="3">
               <location x="-20" y="100" z="25"/>
           </instance>
-          <instance id="3">
+          <instance id="4">
               <location x="50" y="60" z="0"/>
           </instance>          
       </population>
