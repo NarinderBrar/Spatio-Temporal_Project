@@ -1,9 +1,0 @@
-# Script for running automated tests on OSB using Travis-CI, see https://github.com/OpenSourceBrain/osb-model-validation
-
-system: Testing L23
-
-experiments:
-  stepcurrent3_0:
-    expected:
-      spike times: [754.2, 1148.075, 1622.75, 2089.2, 2552.0]
-      
