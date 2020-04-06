@@ -211,7 +211,7 @@
                 <distal x="-30.0" y="25.0" z="0.0" diameter="0.5"/>
             </segment>
 
-            <!--segment id="35" name="dend2L">
+            <segment id="35" name="dend2L">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="75.0" z="10.0" diameter="1.0"/>
                 <distal x="0.0" y="75.0" z="40.0" diameter="1.0"/>
@@ -221,7 +221,7 @@
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="75.0" z="-10.0" diameter="1.0"/>
                 <distal x="0.0" y="75.0" z="-40.0" diameter="1.0"/>
-            </segment-->
+            </segment>
 
             <segmentGroup id="Soma" neuroLexId="sao864921383">
                 <member segment="0"/>
@@ -311,6 +311,16 @@
                 <member segment="342"/>
             </segmentGroup>
 
+            <segmentGroup id="dend2RDGrp" neuroLexId="sao864921383">
+                <property tag="numberInternalDivisions" value="100"/>
+                <member segment="35"/>
+            </segmentGroup>
+
+            <segmentGroup id="dend2LDGrp" neuroLexId="sao864921383">
+                <property tag="numberInternalDivisions" value="100"/>
+                <member segment="36"/>
+            </segmentGroup>
+
             <segmentGroup id="all">
                 <include segmentGroup="Soma"/>
                 <include segmentGroup="axon0Grp"/>
@@ -334,6 +344,9 @@
                 <include segmentGroup="dend1LTGrp"/>
                 <include segmentGroup="dend1RDGrp"/>
                 <include segmentGroup="dend1LDGrp"/>
+
+                <include segmentGroup="dend2RDGrp"/>
+                <include segmentGroup="dend2LDGrp"/>
             </segmentGroup>
 
             <segmentGroup id="axon_group" neuroLexId="GO:0030424">
