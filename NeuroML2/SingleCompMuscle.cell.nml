@@ -23,123 +23,122 @@
                 <distal x="0" y="85" z="0" diameter="20"/>
             </segment>
 
-            <segment id="1" name="dend1">
+            <segment id="1" name="axon1">
                 <parent segment="11" fractionAlong="1"/>
                 <proximal x="0.0" y="35.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="55.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="2" name="dend2">
+            <segment id="2" name="axon2">
                 <parent segment="12" fractionAlong="1"/>
                 <proximal x="0.0" y="5.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="25.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="3" name="dend3">
+            <segment id="3" name="axon3">
                 <parent segment="13" fractionAlong="1"/>
                 <proximal x="0.0" y="-25.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-5.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="4" name="dend4">
+            <segment id="4" name="axon4">
                 <parent segment="14" fractionAlong="1"/>
                 <proximal x="0.0" y="-55.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-35.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="5" name="dend5">
+            <segment id="5" name="axon5">
                 <parent segment="15" fractionAlong="1"/>
                 <proximal x="0.0" y="-85.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-65.0" z="0.0" diameter="5.0"/>
             </segment>
 
-            <segment id="6" name="dend6">
+            <segment id="6" name="axon6">
                 <parent segment="16" fractionAlong="1"/>
                 <proximal x="0.0" y="-115.0" z="0.0" diameter="5.0"/>
                 <distal x="0.0" y="-95.0" z="0.0" diameter="5.0"/>
             </segment>
 
-
-            <segment id="11" name="dend1C">
+            <segment id="11" name="axon1C">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="55.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="65.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segment id="12" name="dend2C">
+            <segment id="12" name="axon2C">
                 <parent segment="1" fractionAlong="1"/>
                 <proximal x="0.0" y="25.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="35.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segment id="13" name="dend3C">
+            <segment id="13" name="axon3C">
                 <parent segment="2" fractionAlong="1"/>
                 <proximal x="0.0" y="-5.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="5.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segment id="14" name="dend4C">
+            <segment id="14" name="axon4C">
                 <parent segment="3" fractionAlong="1"/>
                 <proximal x="0.0" y="-35.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="-25.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segment id="15" name="dend5C">
+            <segment id="15" name="axon5C">
                 <parent segment="4" fractionAlong="1"/>
                 <proximal x="0.0" y="-65.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="-55.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segment id="16" name="dend6C">
+            <segment id="16" name="axon6C">
                 <parent segment="5" fractionAlong="1"/>
                 <proximal x="0.0" y="-95.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="-85.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segment id="21" name="axon1R">
+            <segment id="21" name="axon7R">
                 <parent segment="16" fractionAlong="0"/>
                 <proximal x="0.0" y="-125.0" z="-10.0" diameter="1.0"/>
                 <distal x="0.0" y="-115.0" z="0.0" diameter="1.0"/>
             </segment>
 
-            <segment id="22" name="axon1L">
+            <segment id="22" name="axon7L">
                 <parent segment="16" fractionAlong="0"/>
                 <proximal x="0.0" y="-125.0" z="10.0" diameter="1.0"/>
                 <distal x="0.0" y="-115.0" z="0.0" diameter="1.0"/>
             </segment>
 
-            <segment id="23" name="axon2R">
+            <segment id="23" name="axon8R">
                 <parent segment="16" fractionAlong="0"/>
                 <proximal x="-20.0" y="-110.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="-100.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segment id="24" name="axon2L">
+            <segment id="24" name="axon8L">
                 <parent segment="16" fractionAlong="0"/>
                 <proximal x="20.0" y="-110.0" z="0.0" diameter="2.0"/>
                 <distal x="0.0" y="-100.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segment id="25" name="axon2RCR">
-                <parent segment="25" fractionAlong="0"/>
+            <segment id="25" name="axon8RCR">
+                <parent segment="23" fractionAlong="0"/>
                 <proximal x="-30.0" y="-110.0" z="10.0" diameter="2.0"/>
                 <distal x="-20.0" y="-110.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segment id="26" name="axon2RCL">
-                <parent segment="25" fractionAlong="0"/>
+            <segment id="26" name="axon8RCL">
+                <parent segment="23" fractionAlong="0"/>
                 <proximal x="-30.0" y="-110.0" z="-10.0" diameter="2.0"/>
                 <distal x="-20.0" y="-110.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segment id="27" name="axon2LCR">
-                <parent segment="26" fractionAlong="0"/>
+            <segment id="27" name="axon8LCR">
+                <parent segment="24" fractionAlong="0"/>
                 <proximal x="30.0" y="-110.0" z="10.0" diameter="2.0"/>
                 <distal x="20.0" y="-110.0" z="0.0" diameter="2.0"/>
             </segment>
 
-            <segment id="28" name="axon2LCL">
-                <parent segment="26" fractionAlong="0"/>
+            <segment id="28" name="axon8LCL">
+                <parent segment="24" fractionAlong="0"/>
                 <proximal x="30.0" y="-110.0" z="-10.0" diameter="2.0"/>
                 <distal x="20.0" y="-110.0" z="0.0" diameter="2.0"/>
             </segment>
@@ -148,60 +147,56 @@
                 <member segment="0"/>
             </segmentGroup>
 
-            <segmentGroup id="dend0Grp" neuroLexId="sao864921383">
+            <segmentGroup id="axon0Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
                 <member segment="1"/>
                 <member segment="11"/>
             </segmentGroup>
 
-            <segmentGroup id="dend1Grp" neuroLexId="sao864921383">
+            <segmentGroup id="axon1Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
                 <member segment="2"/>
                 <member segment="12"/>
             </segmentGroup>
 
-            <segmentGroup id="dend2Grp" neuroLexId="sao864921383">
+            <segmentGroup id="axon2Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
                 <member segment="3"/>
                 <member segment="13"/>
             </segmentGroup>
 
-            <segmentGroup id="dend3Grp" neuroLexId="sao864921383">
+            <segmentGroup id="axon3Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
                 <member segment="4"/>
                 <member segment="14"/>
             </segmentGroup>
 
-            <segmentGroup id="dend4Grp" neuroLexId="sao864921383">
+            <segmentGroup id="axon4Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
                 <member segment="5"/>
                 <member segment="15"/>
             </segmentGroup>
 
-            <segmentGroup id="dend5Grp" neuroLexId="sao864921383">
+            <segmentGroup id="axon5Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="10"/>
                 <member segment="6"/>
                 <member segment="16"/>
             </segmentGroup>
 
-            <segmentGroup id="axon1RGrp" neuroLexId="sao864921383">
+            <segmentGroup id="axon7Grp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="21"/>
-            </segmentGroup>
-
-            <segmentGroup id="axon1LGrp" neuroLexId="sao864921383">
-                <property tag="numberInternalDivisions" value="100"/>
                 <member segment="22"/>
             </segmentGroup>
 
-            <segmentGroup id="axon2RGrp" neuroLexId="sao864921383">
+            <segmentGroup id="axon8RGrp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="23"/>
                 <member segment="25"/>
                 <member segment="26"/>
             </segmentGroup>
 
-            <segmentGroup id="axon2LGrp" neuroLexId="sao864921383">
+            <segmentGroup id="axon8LGrp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="24"/>
                 <member segment="27"/>
@@ -210,16 +205,16 @@
 
             <segmentGroup id="all">
                 <include segmentGroup="Soma"/>
-                <include segmentGroup="dend0Grp"/>
-                <include segmentGroup="dend1Grp"/>
-                <include segmentGroup="dend2Grp"/>
-                <include segmentGroup="dend3Grp"/>
-                <include segmentGroup="dend4Grp"/>
-                <include segmentGroup="dend5Grp"/>                
-                <include segmentGroup="axon1RGrp"/>
-                <include segmentGroup="axon1LGrp"/>
-                <include segmentGroup="axon2RGrp"/>
-                <include segmentGroup="axon2LGrp"/>
+                <include segmentGroup="axon0Grp"/>
+                <include segmentGroup="axon1Grp"/>
+                <include segmentGroup="axon2Grp"/>
+                <include segmentGroup="axon3Grp"/>
+                <include segmentGroup="axon4Grp"/>
+                <include segmentGroup="axon5Grp"/>                
+
+                <include segmentGroup="axon7Grp"/>
+                <include segmentGroup="axon8RGrp"/>
+                <include segmentGroup="axon8LGrp"/>
             </segmentGroup>
 
             <segmentGroup id="soma_group" neuroLexId="GO:0043025">
@@ -227,19 +222,20 @@
             </segmentGroup>
 
             <segmentGroup id="dendrite_group" neuroLexId="GO:0030425">
-                <include segmentGroup="dend0Grp"/>
-                <include segmentGroup="dend1Grp"/>
-                <include segmentGroup="dend2Grp"/>
-                <include segmentGroup="dend3Grp"/>
-                <include segmentGroup="dend4Grp"/>
-                <include segmentGroup="dend5Grp"/>
+
             </segmentGroup>
 
             <segmentGroup id="axon_group" neuroLexId="GO:0030424">
-                <include segmentGroup="axon1RGrp"/>
-                <include segmentGroup="axon1LGrp"/>
-                <include segmentGroup="axon2RGrp"/>
-                <include segmentGroup="axon2LGrp"/>
+                <include segmentGroup="axon0Grp"/>
+                <include segmentGroup="axon1Grp"/>
+                <include segmentGroup="axon2Grp"/>
+                <include segmentGroup="axon3Grp"/>
+                <include segmentGroup="axon4Grp"/>
+                <include segmentGroup="axon5Grp"/>
+
+                <include segmentGroup="axon7Grp"/>
+                <include segmentGroup="axon8RGrp"/>
+                <include segmentGroup="axon8LGrp"/>
             </segmentGroup>
         </morphology>
 
