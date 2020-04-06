@@ -11,21 +11,14 @@
   </notes>
 
   <include href="vNeuron_Sensor.cell.nml"></include>
+  <include href="vNeuron_Motor.cell.nml"></include>
+  <iafCell id="iafNeuron_Sensor" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
+  <iafCell id="iafNeuron_Motor" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
 
   <expTwoSynapse id="exc_syn_1conns" erev="0mV" gbase="25nS" tauDecay="10ms" tauRise="1ms"/>
 
   <pulseGenerator id="constant_hyperpolarizing_current" delay="0ms" duration="20s" amplitude="-70pA"/>
   <pulseGenerator id="transient_pulse_current" delay="700ms" duration="2000ms" amplitude="180pA"/>
-
-  <iafCell id="iafNeuron_Sensor" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
-  <iafCell id="iafNeuron_Motor" reset="-70mV" C="0.4nF" thresh="-50mV" leakConductance="0.02uS" leakReversal="-70mV"/>
-
-  <!--include href="Leak.channel.nml"/>
-  <include href="k_slow.channel.nml"/>
-  <include href="k_fast.channel.nml"/>
-  <include href="ca_boyle.channel.nml"/-->
-
-  <include href="vNeuron_Motor.cell.nml"/>
 
   <network id="network" type="networkWithTemperature" temperature="34 degC">
       <population id="iafPop_Sensor" component="iafNeuron_Sensor" size="15" type="populationList">
