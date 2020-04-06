@@ -357,6 +357,13 @@
                 <include segmentGroup="axon7Grp"/>
                 <include segmentGroup="axon8RGrp"/>
                 <include segmentGroup="axon8LGrp"/>
+
+                <include segmentGroup="dend1RTGrp"/>
+                <include segmentGroup="dend1LTGrp"/>
+                <include segmentGroup="dend1RDGrp"/>
+                <include segmentGroup="dend1LDGrp"/>
+                <include segmentGroup="dend2RDGrp"/>
+                <include segmentGroup="dend2LDGrp"/>
             </segmentGroup>
 
             <segmentGroup id="soma_group" neuroLexId="GO:0043025">
