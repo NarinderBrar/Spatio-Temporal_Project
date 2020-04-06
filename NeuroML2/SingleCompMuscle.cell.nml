@@ -211,7 +211,7 @@
                 <distal x="-30.0" y="25.0" z="0.0" diameter="0.5"/>
             </segment>
 
-            <segment id="35" name="dend2L">
+            <!--segment id="35" name="dend2L">
                 <parent segment="0" fractionAlong="1"/>
                 <proximal x="0.0" y="75.0" z="10.0" diameter="1.0"/>
                 <distal x="0.0" y="75.0" z="40.0" diameter="1.0"/>
@@ -245,7 +245,7 @@
                 <parent segment="36" fractionAlong="1"/>
                 <proximal x="0.0" y="75.0" z="-40.0" diameter="1.0"/>
                 <distal x="0.0" y="55.0" z="-60.0" diameter="1.0"/>
-            </segment>
+            </segment-->
 
             <segmentGroup id="Soma" neuroLexId="sao864921383">
                 <member segment="0"/>
@@ -335,7 +335,7 @@
                 <member segment="342"/>
             </segmentGroup>
 
-            <segmentGroup id="dend2RGrp" neuroLexId="sao864921383">
+            <!--segmentGroup id="dend2RGrp" neuroLexId="sao864921383">
                 <property tag="numberInternalDivisions" value="100"/>
                 <member segment="35"/>
                 <member segment="351"/>
@@ -347,7 +347,7 @@
                 <member segment="36"/>
                 <member segment="361"/>
                 <member segment="362"/>
-            </segmentGroup>
+            </segmentGroup-->
 
             <segmentGroup id="all">
                 <include segmentGroup="Soma"/>
@@ -365,8 +365,8 @@
                 <include segmentGroup="dend1LTGrp"/>
                 <include segmentGroup="dend1RDGrp"/>
                 <include segmentGroup="dend1LDGrp"/>
-                <include segmentGroup="dend2RGrp"/>
-                <include segmentGroup="dend2LGrp"/>
+                <!--include segmentGroup="dend2RGrp"/>
+                <include segmentGroup="dend2LGrp"/-->
 
             </segmentGroup>
 
@@ -379,8 +379,8 @@
                 <include segmentGroup="dend1LTGrp"/>
                 <include segmentGroup="dend1RDGrp"/>
                 <include segmentGroup="dend1LDGrp"/>
-                <include segmentGroup="dend2RGrp"/>
-                <include segmentGroup="dend2LGrp"/>
+                <!--include segmentGroup="dend2RGrp"/>
+                <include segmentGroup="dend2LGrp"/-->
             </segmentGroup>
 
             <segmentGroup id="axon_group" neuroLexId="GO:0030424">
